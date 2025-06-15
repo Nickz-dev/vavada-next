@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { ReactNode, useEffect } from "react";
 import en from "@/locales/en.json";
 import ru from "@/locales/ru.json";
-import '@/global.css'
+
 interface LayoutProps {
   children: ReactNode;
   meta?: {

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const generateSitemap = () => {
-  const pages = ['/', 'ru', '/en', '/bonuses', '/registration', '/mirrors',  '/slots','/payments', '/download'];
+  const pages = ['/', '/ru', '/en', '/bonuses', '/registration', '/mirrors',  '/slots','/payments', '/download'];
   
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

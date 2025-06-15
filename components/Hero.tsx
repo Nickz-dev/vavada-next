@@ -151,13 +151,13 @@ export const Hero: React.FC<HeroProps> = ({ templateData, lang }) => {
                   unoptimized={true} // SVG не нужно оптимизировать (иначе Next.js попытается конвертировать в PNG)
                 />
               </div>
-              <div className="absolute inset-0 bg-[url('/images/hero-placeholder.jpg')] bg-cover rounded-lg opacity-20 mix-blend-overlay"></div>
+              <div className="absolute inset-0  rounded-lg opacity-20 mix-blend-overlay"></div>
             </div>
           </div>
         </div>
 
         <div className={`absolute inset-0 ${hero.gradient}`}></div>
-        <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-5 mix-blend-overlay"></div>
+        <div className="absolute inset-0 opacity-5 mix-blend-overlay"></div>
       </div>
     </section>
   );

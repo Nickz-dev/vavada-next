@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "home": {
+      "title": "Vavada Casino — Official Site",
+      "description": "Official Vavada casino website with licensed games",
+      "keywords": "casino, vavada, slots, bonuses, roulette"
+    },
+    "slots": {
+      "title": "Vavada Slots",
+      "description": "Play the best slot machines at Vavada Casino. Huge selection of games, big payouts!"
+    },
+    "bonuses": {
+      "title": "Vavada Bonuses",
+      "description": "Get generous bonuses and free spins at Vavada Casino. We have the best bonus offers for players!"
+    },
+    "mirror": {
+      "title": "Vavada Mirror",
+      "description": "Current Vavada mirror site to bypass restrictions. Play without limitations anytime!"
+    },
+    "download": {
+      "title": "Download Vavada",
+      "description": "Download Vavada app for PC and mobile devices. Play your favorite casino games anywhere!"
+    },
+    "payment": {
+      "title": "Vavada Payments",
+      "description": "Fast and secure deposit and withdrawal methods at Vavada Casino."
+    },
+    "registration": {
+      "title": "Register at Vavada Casino | Create Account",
+      "description": "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute."
+    }
+  },
+  "header": {
+    "breadcrumbs": {
+      "ariaLabel": "Navigation breadcrumbs",
+      "home": "Home",
+      "currentPage": "Current page"
+    },
+    "nav": {
+      "ariaLabel": "Main navigation",
+      "links": {
+        "home": "Home",
+        "mirrors": "Mirrors",
+        "slots": "Slots",
+        "bonuses": "Bonuses",
+        "registration": "Registration",
+        "download": "Download",
+        "payments": "Payment methods"
+      }
+    },
+    "auth": {
+      "login": "Login",
+      "register": "Register"
+    },
+    "mobileMenuButton": "Open menu"
+  },
+  "hero": {
+    "title": "VAVADA — Official Casino",
+    "description": "Licensed games, instant payouts and generous bonuses for new players",
+    "stats": {
+      "games": "Games",
+      "bonus": "Bonus",
+      "rtp": "RTP",
+      "support": "Support"
+    },
+    "cta": {
+      "register": "Register",
+      "login": "Login"
+    }
+  },
+  "buttons": {
+    "play": "Play now"
+  },
+  "bonusesSection": {
+    "title": "Current VAVADA Bonuses",
+    "items": [
+      {
+        "title": "Welcome Package",
+        "amount": "100% up to ₽100,000",
+        "description": "+100 free spins for new players",
+        "ctaText": "Get Bonus",
+        "link": "/registration"
+      },
+      {
+        "title": "Cashback",
+        "amount": "Up to 10%",
+        "description": "Weekly moneyback",
+        "ctaText": "Details",
+        "link": "/bonuses/#cashback"
+      },
+      {
+        "title": "Reload Bonus",
+        "amount": "50% on deposit",
+        "description": "Every Friday",
+        "ctaText": "Details",
+        "link": "/bonuses/#reload"
+      }
+    ]
+  },
+  "features": {
+    "title": "VAVADA Casino Advantages",
+    "items": [
+      {
+        "title": "Licensed Games",
+        "description": "5000+ slots from top providers with official license"
+      },
+      {
+        "title": "Fast Payouts",
+        "description": "Instant withdrawals to cards and popular payment systems"
+      },
+      {
+        "title": "Generous Bonuses",
+        "description": "Welcome bonuses, free spins and regular promotions"
+      }
+    ]
+  },
+  "popularGames": {
+    "title": "Popular Games",
+    "viewAll": "View All →",
+    "playButton": "Play",
+    "items": [
+      {
+        "name": "Sweet Bonanza",
+        "provider": "Pragmatic Play"
+      },
+      {
+        "name": "Gates of Olympus",
+        "provider": "Pragmatic Play"
+      },
+      {
+        "name": "Big Bass Splash",
+        "provider": "Pragmatic Play"
+      },
+      {
+        "name": "Ice Princess",
+        "provider": "Belatra"
+      },
+      {
+        "name": "The Dog House",
+        "provider": "Pragmatic Play"
+      },
+      {
+        "name": "Fire in the Hole 3",
+        "provider": "Nolimit City"
+      }
+    ]
+  },
+  "liveWinnersStats": {
+    "winnersTitle": "Recent Winners",
+    "statsTitle": "Statistics",
+    "winnersList": [
+      {
+        "name": "Alex***",
+        "game": "Sweet Bonanza",
+        "amount": "$3,420"
+      },
+      {
+        "name": "Maria***",
+        "game": "Gates of Olympus",
+        "amount": "$1,790"
+      },
+      {
+        "name": "John***",
+        "game": "Book of Dead",
+        "amount": "$2,380"
+      }
+    ],
+    "statsData": [
+      {
+        "label": "Players online",
+        "value": "2,847"
+      },
+      {
+        "label": "Paid out today",
+        "value": "$142,576"
+      },
+      {
+        "label": "Jackpot",
+        "value": "$2,001,678"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose VAVADA?",
+    "content": {
+      "paragraphs": [
+        "VAVADA Casino is a licensed gaming platform...",
+        "Our advantages:"
+      ],
+      "advantages": [
+        "Over 5000 licensed slots from top providers",
+        "Generous bonus program with welcome package up to 100,000₽",
+        "Instant withdrawals to all popular payment systems",
+        "24/7 support in English",
+        "Regular tournaments with big prize pools"
+      ]
+    }
+  },
+  "securityLicenses": {
+    "title": "Security & Reliability",
+    "sections": [
+      {
+        "title": "Licenses & Certificates",
+        "content": "VAVADA operates under Curacao eGaming license №8048/JAZ2014-006...",
+        "badges": [
+          { "text": "Curacao Licensed", "dotColor": "bg-green-500" },
+          { "text": "RNG Certified", "dotColor": "bg-blue-500" },
+          { "text": "eCOGRA Approved", "dotColor": "bg-purple-500" }
+        ]
+      },
+      {
+        "title": "Secure Payments",
+        "content": "All transactions are protected with modern SSL encryption...",
+        "badges": [
+          { "text": "Visa Secure", "dotColor": "bg-[#ff424d]" },
+          { "text": "Mastercard SecureCode", "dotColor": "bg-[#ff424d]" },
+          { "text": "SSL Encryption", "dotColor": "bg-[#ff424d]" },
+          { "text": "PCI DSS Compliant", "dotColor": "bg-[#ff424d]" }
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Player Reviews",
+    "rating": 4.9,
+    "items": [
+      {
+        "initial": "M",
+        "name": "Maxim",
+        "date": "2 days ago",
+        "stars": 5,
+        "text": "Fast payouts, great support. Withdrew a big win without any problems in 15 minutes."
+      },
+      {
+        "initial": "A",
+        "name": "Anna",
+        "date": "a week ago",
+        "stars": 5,
+        "text": "Great bonuses and a wide selection of games. Especially like the live dealers section."
+      },
+      {
+        "initial": "V",
+        "name": "Vladimir",
+        "date": "a month ago",
+        "stars": 5,
+        "text": "Playing for more than a year, everything is fair and transparent. Support always helps with any issues."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "linkText": "View all questions →",
+    "items": [
+      {
+        "question": "How to start playing at VAVADA?",
+        "answer": "To start playing, just register on the website..."
+      },
+      {
+        "question": "What withdrawal methods are available?",
+        "answer": "We support all popular withdrawal methods..."
+      },
+      {
+        "question": "How to get the welcome bonus?",
+        "answer": "The welcome bonus is credited automatically..."
+      }
+    ]
+  },
+  "cta": {
+    "content": {
+      "title": "Ready to start playing?",
+      "description": "Register now and get a welcome bonus up to 2000$"
+    },
+    "buttons": {
+      "primary": {
+        "text": "Sign Up",
+        "border": "border-2 border-white",
+        "textColor": "text-white",
+        "hoverBg": "hover:bg-white",
+        "hoverText": "hover:text-[#ff424d]"
+      },
+      "secondary": {
+        "text": "All Bonuses",
+        "bg": "bg-white",
+        "textColor": "text-[#ff424d]",
+        "hoverBg": "hover:bg-gray-100"
+      }
+    }
+  },
+  "registrationHero": {
+    "title": "Become a Vavada Casino player <span class=\"text-[#ff424d]\">in 1 minute</span>",
+    "description": "Register and get an exclusive 100% bonus up to €1000 + 100 free spins",
+    "stats": {
+      "time": "registration",
+      "bonusPercent": "bonus",
+      "support": "support"
+    },
+    "cta": {
+      "primary": "Start Registration",
+      "secondary": "All Bonuses"
+    }
+  },
+  "registrationForm": {
+    "title": "Register at VAVADA",
+    "fields": {
+      "email": "Email",
+      "phone": "Phone",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "currency": "Currency",
+      "country": "Country"
+    },
+    "placeholders": {
+      "email": "your@email.com",
+      "phone": "+1 (000) 000-0000",
+      "password": "••••••••",
+      "confirmPassword": "••••••••"
+    },
+    "currencies": ["USD", "EUR", "GBP"],
+    "countries": [
+      "United States",
+      "United Kingdom",
+      "Canada",
+      "Australia",
+      "Other"
+    ],
+    "agreeTerms": "I agree to the",
+    "terms": "Terms of Service",
+    "and": "and",
+    "privacy": "Privacy Policy",
+    "receivePromotions": "I want to receive exclusive bonuses and promotions",
+    "submitButton": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log in"
+  },
+  "registrationNavigation": {
+    "steps": "How to register",
+    "benefits": "Benefits",
+    "verification": "Verification",
+    "faq": "FAQ"
+  },
+  "registrationSteps": {
+    "title": "3 simple steps to register at Vavada",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Fill in details",
+        "items": [
+          "Enter a valid email",
+          "Create a strong password",
+          "Select your preferred currency"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Email verification",
+        "items": [
+          "Check your inbox",
+          "Find email from Vavada Casino",
+          "Click the verification link"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Bonus activation",
+        "items": [
+          "Make your first deposit",
+          "Get 100% bonus up to €1000",
+          "Use free spins in selected slots"
+        ]
+      }
+    ]
+  },
+  "verificationSection": {
+    "title": "Account Verification",
+    "documents": {
+      "title": "Required Documents",
+      "items": [
+        "Passport or ID card",
+        "Proof of address",
+        "Selfie with document"
+      ]
+    },
+    "timeline": {
+      "title": "Verification Timeline",
+      "items": [
+        "Standard verification: up to 24 hours",
+        "Express verification: 1-2 hours"
+      ]
+    }
+  },
+  "registrationFAQ": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Can I create a second account?",
+        "answer": "No, casino rules allow only one account per player. Creating multiple accounts is prohibited."
+      },
+      {
+        "question": "When do I need to verify my account?",
+        "answer": "Verification is required for your first withdrawal or when reaching a certain win amount."
+      },
+      {
+        "question": "What to do if I forgot my password?",
+        "answer": "Use the password recovery function via email or contact our support team."
+      },
+      {
+        "question": "How to get the welcome bonus?",
+        "answer": "The welcome bonus is activated automatically after registration and first deposit."
+      },
+      {
+        "question": "What currencies are available?",
+        "answer": "Available currencies: RUB, USD, EUR. You can choose currency during registration or in your account settings."
+      }
+    ]
+  },
+  "underDevelopment": {
+    "title": "Page under development",
+    "message": "We're working hard on this page. Please check back later.",
+    "home": "Back to home"
+  },
+  "footer": {
+    "about": {
+      "title": "About casino",
+      "links": {
+        "home": "Home",
+        "mirrors": "Mirrors",
+        "registration": "Registration",
+        "download": "Download"
+      }
+    },
+    "games": {
+      "title": "Games",
+      "links": {
+        "slots": "Slots",
+        "#popular": "Popular",
+        "#new": "New",
+        "#jackpot": "Jackpots"
+      }
+    },
+    "bonusesSection": {
+      "title": "Bonuses",
+      "links": {
+        "#all": "All bonuses",
+        "#welcome": "Welcome bonus",
+        "#reload": "Reload bonuses",
+        "#cashback": "Cashback"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "links": {
+        "faq": "FAQ",
+        "payments": "Payments",
+        "#security": "Security",
+        "#contacts": "Contacts"
+      }
+    },
+    "payments": {
+      "title": "Payment methods"
+    },
+    "responsible": {
+      "title": "Responsible gaming",
+      "text": "{brandName} supports responsible gaming principles and offers self-control tools. Set personal limits for deposits, bets and playing time in your account."
+    },
+    "license": {
+      "title": "License",
+      "text": "{brandName} operates under Curacao eGaming license №8048/JAZ2014-006. All games are certified and regularly audited for fairness."
+    },
+    "copyright": "© {year} {brandName}. All rights reserved.",
+    "legal": {
+      "terms": "Terms of use",
+      "privacy": "Privacy",
+      "aml": "AML policy"
+    }
+  }
+}

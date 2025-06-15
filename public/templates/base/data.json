@@ -1,0 +1,798 @@
+{
+  "templates": {
+    "casino-1": {
+      "colorClass": "bg-blue-500",
+      "header": {
+        "activeLink": "border-b-2 border-[#ff424d] font-bold",
+        "bgColor": "bg-[#1c1c2d]",
+        "textColor": "text-gray-300",
+        "hoverTextColor": "hover:text-white",
+        "brandColor": "text-[#ff424d]",
+        "brandHoverColor": "hover:text-[#ff5a64]",
+        "buttonBg": "bg-[#ff424d]",
+        "buttonHoverBg": "hover:bg-[#ff5a64]",
+        "mobileMenuBg": "bg-[#2a2a42]",
+        "brandName": "VAVADA",
+        "languages": [
+          { "code": "en", "name": "EN", "fullName": "English" },
+          { "code": "ru", "name": "RU", "fullName": "Русский" }
+        ]
+      },
+      "hero": {
+        "bgColor": "bg-[#232338]",
+        "stats": [
+          { "value": "5000+", "key": "games" },
+          { "value": "₽100K", "key": "bonus" },
+          { "value": "97.8%", "key": "rtp" },
+          { "value": "24/7", "key": "support" }
+        ],
+        "cta": {
+          "primary": {
+            "bg": "bg-[#ff424d]",
+            "hoverBg": "hover:bg-[#ff2c39]",
+            "shadow": "shadow-[#ff424d]/20"
+          },
+          "secondary": {
+            "border": "border-2 border-[#ff424d]",
+            "hoverBg": "hover:bg-[#ff424d]/10"
+          }
+        },
+        "gradient": "bg-gradient-to-r from-[#ff424d]/10 via-[#ff424d]/5 to-transparent"
+      },
+      "bonuses": {
+        "bgColor": "bg-[#232338]",
+        "cardBg": "bg-[#2a2a42]",
+        "titleColor": "text-white",
+        "bonusColor": "text-[#ff424d]",
+        "amountColor": "text-white",
+        "descriptionColor": "text-gray-400",
+        "cta": {
+          "bg": "bg-[#ff424d]",
+          "hoverBg": "hover:bg-[#ff2c39]",
+          "text": "text-white"
+        },
+        "items": [
+          {
+            "title": "Welcome Package",
+            "amount": "100% up to ₽100,000",
+            "description": "+100 free spins for new players",
+            "ctaText": "Get Bonus",
+            "link": "/registration"
+          },
+          {
+            "title": "Cashback",
+            "amount": "Up to 10%",
+            "description": "Weekly moneyback",
+            "ctaText": "Details",
+            "link": "/bonuses/#cashback"
+          },
+          {
+            "title": "Reload Bonus",
+            "amount": "50% on deposit",
+            "description": "Every Friday",
+            "ctaText": "Details",
+            "link": "/bonuses/#reload"
+          }
+        ]
+      },
+      "features": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "card": {
+          "iconBg": "bg-[#ff424d]",
+          "titleColor": "text-white",
+          "textColor": "text-gray-400"
+        },
+        "items": [
+          {
+            "title": "Licensed Games",
+            "description": "5000+ slots from top providers with official license",
+            "icon": "✅"
+          },
+          {
+            "title": "Fast Payouts",
+            "description": "Instant withdrawals to cards and popular payment systems",
+            "icon": "⚡"
+          },
+          {
+            "title": "Generous Bonuses",
+            "description": "Welcome bonuses, free spins and regular promotions",
+            "icon": "🎁"
+          }
+        ]
+      },
+      "popularGames": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "linkColor": "text-[#ff424d]",
+        "linkHoverColor": "hover:text-[#ff2c39]",
+        "gameCard": {
+          "titleColor": "text-white",
+          "providerColor": "text-gray-400",
+          "buttonBg": "bg-[#ff424d]",
+          "buttonText": "text-white"
+        },
+        "items": [
+          {
+            "name": "Sweet Bonanza",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/sweet-bonanza.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "Gates of Olympus",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/gates-of-olympus.jpg",
+            "gradient": "from-blue-500 to-indigo-600"
+          },
+          {
+            "name": "Big Bass Splash",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/big-bass-splash.jpg",
+            "gradient": "from-green-500 to-teal-600"
+          },
+          {
+            "name": "Ice Princess",
+            "provider": "Belatra",
+            "image": "/images/games/ice-princess.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "The Dog House",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/the-dog-house.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "Fire in the Hole 3",
+            "provider": "Nolimit City",
+            "image": "/images/games/fire-in-the-hole-3.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          }
+        ]
+      },
+      "liveWinnersStats": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "winners": {
+          "itemBg": "bg-[#2a2a42]",
+          "nameColor": "text-white",
+          "gameColor": "text-gray-400",
+          "amountColor": "text-[#4CAF50]"
+        },
+        "stats": {
+          "labelColor": "text-gray-400",
+          "valueColor": "text-white",
+          "highlightColor": "text-[#ff424d]"
+        },
+        "winnersList": [
+          {
+            "name": "Alex***",
+            "game": "Sweet Bonanza",
+            "amount": "₽156,420"
+          },
+          {
+            "name": "Maria***",
+            "game": "Gates of Olympus",
+            "amount": "₽89,750"
+          },
+          {
+            "name": "John***",
+            "game": "Book of Dead",
+            "amount": "₽112,300"
+          }
+        ],
+        "statsData": [
+          {
+            "label": "Игроков онлайн",
+            "value": "2,847",
+            "highlight": false
+          },
+          {
+            "label": "Выплачено за сегодня",
+            "value": "₽14,576,890",
+            "highlight": false
+          },
+          {
+            "label": "Джекпот",
+            "value": "₽2,345,678",
+            "highlight": true
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "proseColor": "prose-invert",
+        "content": {
+          "paragraphs": [
+            "Онлайн казино VAVADA — это лицензированная игровая платформа...",
+            "Наши преимущества:"
+          ],
+          "advantages": [
+            "Более 5000 лицензионных слотов от топовых провайдеров",
+            "Щедрая бонусная программа с приветственным пакетом до 100,000₽",
+            "Моментальные выплаты на все популярные платежные системы",
+            "Круглосуточная поддержка на русском языке",
+            "Регулярные турниры с крупными призовыми фондами"
+          ]
+        }
+      },
+      "securityLicenses": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "cardBg": "bg-[#1c1c2d]",
+        "textColor": "text-gray-400",
+        "badgeTextColor": "text-gray-300",
+        "sections": [
+          {
+            "title": "Лицензия и сертификаты",
+            "content": "VAVADA работает по лицензии Curacao eGaming №8048/JAZ2014-006...",
+            "badges": [
+              { "text": "Curacao Licensed", "dotColor": "bg-green-500" },
+              { "text": "RNG Certified", "dotColor": "bg-blue-500" },
+              { "text": "eCOGRA Approved", "dotColor": "bg-purple-500" }
+            ]
+          },
+          {
+            "title": "Безопасные платежи",
+            "content": "Все транзакции защищены современным SSL-шифрованием...",
+            "badges": [
+              { "text": "Visa Secure", "dotColor": "bg-[#ff424d]" },
+              { "text": "Mastercard SecureCode", "dotColor": "bg-[#ff424d]" },
+              { "text": "SSL Encryption", "dotColor": "bg-[#ff424d]" },
+              { "text": "PCI DSS Compliant", "dotColor": "bg-[#ff424d]" }
+            ]
+          }
+        ]
+      },
+      "reviews": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "ratingColor": "text-[#ff424d]",
+        "cardBg": "bg-[#2a2a42]",
+        "textColor": "text-gray-300",
+        "metaColor": "text-gray-400",
+        "rating": 4.9,
+        "items": [
+          {
+            "initial": "М",
+            "name": "Максим",
+            "date": "2 дня назад",
+            "stars": 5,
+            "text": "Быстрые выплаты, отличная поддержка. Вывел крупный выигрыш без проблем за 15 минут."
+          },
+          {
+            "initial": "А",
+            "name": "Анна",
+            "date": "неделю назад",
+            "stars": 5,
+            "text": "Отличные бонусы и большой выбор игр. Особенно нравится раздел с живыми дилерами."
+          },
+          {
+            "initial": "В",
+            "name": "Владимир",
+            "date": "месяц назад",
+            "stars": 5,
+            "text": "Играю больше года, всё честно и прозрачно. Техподдержка всегда помогает решить любые вопросы."
+          }
+        ]
+      },
+      "faq": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "cardBg": "bg-[#2a2a42]",
+        "questionColor": "text-white",
+        "answerColor": "text-gray-400",
+        "linkColor": "text-[#ff424d]",
+        "linkHoverColor": "hover:text-[#ff2c39]",
+        "items": [
+          {
+            "question": "Как начать играть в VAVADA?",
+            "answer": "Для начала игры достаточно зарегистрироваться на сайте..."
+          },
+          {
+            "question": "Какие способы вывода средств доступны?",
+            "answer": "Мы поддерживаем все популярные способы вывода..."
+          },
+          {
+            "question": "Как получить приветственный бонус?",
+            "answer": "Приветственный бонус начисляется автоматически..."
+          }
+        ]
+      },
+      "cta": {
+        "gradient": "bg-gradient-to-r from-[#ff424d] to-[#ff2c39]",
+        "titleColor": "text-white",
+        "textColor": "text-white",
+        "content": {
+          "title": "Готовы начать игру?",
+          "description": "Зарегистрируйтесь сейчас и получите приветственный бонус до 100,000₽"
+        },
+        "buttons": {
+          "primary": {
+            "text": "Регистрация",
+            "border": "border-2 border-white",
+            "textColor": "text-white",
+            "hoverBg": "hover:bg-white",
+            "hoverText": "hover:text-[#ff424d]"
+          },
+          "secondary": {
+            "text": "Все бонусы",
+            "bg": "bg-white",
+            "textColor": "text-[#ff424d]",
+            "hoverBg": "hover:bg-gray-100"
+          }
+        }
+      },
+      "footer": {
+        "bgColor": "bg-[#1c1c2d]",
+        "borderColor": "border-[#383856]",
+        "textColor": "text-gray-300",
+        "hoverTextColor": "hover:text-white",
+        "cardBgColor": "bg-[#232338]",
+        "brandName": "VAVADA"
+      },
+      "registrationHero": {
+        "bgColor": "bg-gradient-to-br from-[#1c1c2d] to-[#2a2a42]",
+        "stats": [
+          { "value": "1 мин", "key": "time" },
+          { "value": "100%", "key": "bonusPercent" },
+          { "value": "24/7", "key": "support" }
+        ],
+        "cta": {
+          "primary": {
+            "bg": "bg-gradient-to-r from-[#ff424d] to-[#ff2c39]",
+            "hoverBg": "hover:from-[#ff2c39] hover:to-[#ff424d]",
+            "shadow": "shadow-[#ff424d]/30"
+          },
+          "secondary": {
+            "border": "border border-[#383856]",
+            "hoverBorder": "hover:border-[#ff424d]/50",
+            "bg": "bg-[#2a2a42]",
+            "hoverBg": "hover:bg-[#2a2a42]/90"
+          }
+        },
+        "gradient": "bg-gradient-to-r from-[#ff424d]/5 via-transparent to-[#2a2a42]/10"
+      },
+      "registrationForm": {
+        "styles": {
+          "input": "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff424d] focus:border-transparent",
+          "button": "w-full bg-gradient-to-r from-[#ff424d] to-[#ff2c39] hover:from-[#ff2c39] hover:to-[#ff424d] text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-lg hover:shadow-xl"
+        }
+      },
+      "registrationSteps": {
+        "styles": {
+          "section": "bg-[#2a2a42] p-8",
+          "title": "text-3xl font-bold text-white mb-8 text-center",
+          "step": "bg-[#1c1c2d] rounded-xl p-6 border border-[#383856] hover:border-[#ff424d]/50 transition-colors",
+          "stepHeader": "flex items-center mb-4",
+          "stepNumber": "flex-shrink-0 w-12 h-12 rounded-full bg-[#ff424d]/10 flex items-center justify-center text-2xl font-bold text-[#ff424d]",
+          "stepTitle": "ml-4 text-xl font-semibold text-white",
+          "stepContent": "text-gray-400",
+          "item": "flex items-start",
+          "icon": "flex-shrink-0 w-5 h-5 text-[#ff424d] mt-0.5",
+          "itemText": "ml-2"
+        }
+      },
+      "verificationSection": {
+        "styles": {
+          "section": "bg-[#2a2a42]  p-8",
+          "title": "text-2xl font-bold text-white mb-6",
+          "card": "bg-[#1c1c2d] rounded-xl p-6",
+          "cardTitle": "text-xl font-semibold text-white mb-4",
+          "list": "space-y-3 text-gray-300",
+          "item": "flex items-center",
+          "bullet": "text-[#ff424d] mr-2"
+        }
+      },
+      "registrationFAQ": {
+        "styles": {
+          "section": "bg-[#2a2a42]  p-8",
+          "title": "text-2xl font-bold text-white mb-6",
+          "item": "bg-[#1c1c2d] rounded-xl p-6 mb-4 last:mb-0",
+          "question": "text-xl font-semibold text-white mb-3",
+          "answer": "text-gray-300"
+        }
+      }
+    },
+
+    "casino-2": {
+      "colorClass": "bg-red-500",
+      "header": {
+        "activeLink": "border-b-2 border-[#4f46e5] font-bold",
+        "bgColor": "bg-[#2d1c1c]",
+        "textColor": "text-gray-300",
+        "hoverTextColor": "hover:text-white",
+        "brandColor": "text-[#ff6b6b]",
+        "brandHoverColor": "hover:text-[#ff8e8e]",
+        "buttonBg": "bg-[#ff6b6b]",
+        "buttonHoverBg": "hover:bg-[#ff8e8e]",
+        "mobileMenuBg": "bg-[#422a2a]",
+        "brandName": "VAVADA RED",
+        "languages": [
+          { "code": "en", "name": "EN", "fullName": "English" },
+          { "code": "ru", "name": "RU", "fullName": "Русский" }
+        ]
+      },
+      "hero": {
+        "bgColor": "bg-[#232338]",
+        "stats": [
+          { "value": "5000+", "key": "games" },
+          { "value": "₽100K", "key": "bonus" },
+          { "value": "97.8%", "key": "rtp" },
+          { "value": "24/7", "key": "support" }
+        ],
+        "cta": {
+          "primary": {
+            "bg": "bg-[#ff424d]",
+            "hoverBg": "hover:bg-[#ff2c39]",
+            "shadow": "shadow-[#ff424d]/20"
+          },
+          "secondary": {
+            "border": "border-2 border-[#ff424d]",
+            "hoverBg": "hover:bg-[#ff424d]/10"
+          }
+        },
+        "gradient": "bg-gradient-to-r from-[#ff424d]/10 via-[#ff424d]/5 to-transparent"
+      },
+      "bonuses": {
+        "bgColor": "bg-[#232338]",
+        "cardBg": "bg-[#2a2a42]",
+        "titleColor": "text-white",
+        "bonusColor": "text-[#ff6b6b]",
+        "amountColor": "text-white",
+        "descriptionColor": "text-gray-400",
+        "cta": {
+          "bg": "bg-[#ff6b6b]",
+          "hoverBg": "hover:bg-[#ff8e8e]",
+          "text": "text-white"
+        },
+        "items": [
+          {
+            "title": "Welcome Package",
+            "amount": "100% up to ₽100,000",
+            "description": "+100 free spins for new players",
+            "ctaText": "Get Bonus",
+            "link": "/registration"
+          },
+          {
+            "title": "Cashback",
+            "amount": "Up to 10%",
+            "description": "Weekly moneyback",
+            "ctaText": "Details",
+            "link": "/bonuses/#cashback"
+          },
+          {
+            "title": "Reload Bonus",
+            "amount": "50% on deposit",
+            "description": "Every Friday",
+            "ctaText": "Details",
+            "link": "/bonuses/#reload"
+          }
+        ]
+      },
+      "features": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "card": {
+          "iconBg": "bg-[#ff424d]",
+          "titleColor": "text-white",
+          "textColor": "text-gray-400"
+        },
+        "items": [
+          {
+            "title": "Licensed Games",
+            "description": "5000+ slots from top providers with official license",
+            "icon": "✅"
+          },
+          {
+            "title": "Fast Payouts",
+            "description": "Instant withdrawals to cards and popular payment systems",
+            "icon": "⚡"
+          },
+          {
+            "title": "Generous Bonuses",
+            "description": "Welcome bonuses, free spins and regular promotions",
+            "icon": "🎁"
+          }
+        ]
+      },
+      "popularGames": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "linkColor": "text-[#ff424d]",
+        "linkHoverColor": "hover:text-[#ff2c39]",
+        "gameCard": {
+          "titleColor": "text-white",
+          "providerColor": "text-gray-400",
+          "buttonBg": "bg-[#ff424d]",
+          "buttonText": "text-white"
+        },
+        "items": [
+          {
+            "name": "Sweet Bonanza",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/sweet-bonanza.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "Gates of Olympus",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/gates-of-olympus.jpg",
+            "gradient": "from-blue-500 to-indigo-600"
+          },
+          {
+            "name": "Big Bass Splash",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/big-bass-splash.jpg",
+            "gradient": "from-green-500 to-teal-600"
+          },
+          {
+            "name": "Ice Princess",
+            "provider": "Belatra",
+            "image": "/images/games/ice-princess.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "The Dog House",
+            "provider": "Pragmatic Play",
+            "image": "/images/games/the-dog-house.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          },
+          {
+            "name": "Fire in the Hole 3",
+            "provider": "Nolimit City",
+            "image": "/images/games/fire-in-the-hole-3.jpg",
+            "gradient": "from-pink-500 to-purple-600"
+          }
+        ]
+      },
+      "liveWinnersStats": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "winners": {
+          "itemBg": "bg-[#2a2a42]",
+          "nameColor": "text-white",
+          "gameColor": "text-gray-400",
+          "amountColor": "text-[#4CAF50]"
+        },
+        "stats": {
+          "labelColor": "text-gray-400",
+          "valueColor": "text-white",
+          "highlightColor": "text-[#ff424d]"
+        },
+        "winnersList": [
+          {
+            "name": "Alex***",
+            "game": "Sweet Bonanza",
+            "amount": "₽156,420"
+          },
+          {
+            "name": "Maria***",
+            "game": "Gates of Olympus",
+            "amount": "₽89,750"
+          },
+          {
+            "name": "John***",
+            "game": "Book of Dead",
+            "amount": "₽112,300"
+          }
+        ],
+        "statsData": [
+          {
+            "label": "Игроков онлайн",
+            "value": "2,847",
+            "highlight": false
+          },
+          {
+            "label": "Выплачено за сегодня",
+            "value": "₽14,576,890",
+            "highlight": false
+          },
+          {
+            "label": "Джекпот",
+            "value": "₽2,345,678",
+            "highlight": true
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "proseColor": "prose-invert",
+        "content": {
+          "paragraphs": [
+            "Онлайн казино VAVADA — это лицензированная игровая платформа...",
+            "Наши преимущества:"
+          ],
+          "advantages": [
+            "Более 5000 лицензионных слотов от топовых провайдеров",
+            "Щедрая бонусная программа с приветственным пакетом до 100,000₽",
+            "Моментальные выплаты на все популярные платежные системы",
+            "Круглосуточная поддержка на русском языке",
+            "Регулярные турниры с крупными призовыми фондами"
+          ]
+        }
+      },
+      "securityLicenses": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "cardBg": "bg-[#1c1c2d]",
+        "textColor": "text-gray-400",
+        "badgeTextColor": "text-gray-300",
+        "sections": [
+          {
+            "title": "Лицензия и сертификаты",
+            "content": "VAVADA работает по лицензии Curacao eGaming №8048/JAZ2014-006...",
+            "badges": [
+              { "text": "Curacao Licensed", "dotColor": "bg-green-500" },
+              { "text": "RNG Certified", "dotColor": "bg-blue-500" },
+              { "text": "eCOGRA Approved", "dotColor": "bg-purple-500" }
+            ]
+          },
+          {
+            "title": "Безопасные платежи",
+            "content": "Все транзакции защищены современным SSL-шифрованием...",
+            "badges": [
+              { "text": "Visa Secure", "dotColor": "bg-[#ff424d]" },
+              { "text": "Mastercard SecureCode", "dotColor": "bg-[#ff424d]" },
+              { "text": "SSL Encryption", "dotColor": "bg-[#ff424d]" },
+              { "text": "PCI DSS Compliant", "dotColor": "bg-[#ff424d]" }
+            ]
+          }
+        ]
+      },
+      "reviews": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "ratingColor": "text-[#ff424d]",
+        "cardBg": "bg-[#2a2a42]",
+        "textColor": "text-gray-300",
+        "metaColor": "text-gray-400",
+        "rating": 4.9,
+        "items": [
+          {
+            "initial": "М",
+            "name": "Максим",
+            "date": "2 дня назад",
+            "stars": 5,
+            "text": "Быстрые выплаты, отличная поддержка. Вывел крупный выигрыш без проблем за 15 минут."
+          },
+          {
+            "initial": "А",
+            "name": "Анна",
+            "date": "неделю назад",
+            "stars": 5,
+            "text": "Отличные бонусы и большой выбор игр. Особенно нравится раздел с живыми дилерами."
+          },
+          {
+            "initial": "В",
+            "name": "Владимир",
+            "date": "месяц назад",
+            "stars": 5,
+            "text": "Играю больше года, всё честно и прозрачно. Техподдержка всегда помогает решить любые вопросы."
+          }
+        ]
+      },
+      "faq": {
+        "bgColor": "bg-[#232338]",
+        "titleColor": "text-white",
+        "cardBg": "bg-[#2a2a42]",
+        "questionColor": "text-white",
+        "answerColor": "text-gray-400",
+        "linkColor": "text-[#ff424d]",
+        "linkHoverColor": "hover:text-[#ff2c39]",
+        "items": [
+          {
+            "question": "Как начать играть в VAVADA?",
+            "answer": "Для начала игры достаточно зарегистрироваться на сайте..."
+          },
+          {
+            "question": "Какие способы вывода средств доступны?",
+            "answer": "Мы поддерживаем все популярные способы вывода..."
+          },
+          {
+            "question": "Как получить приветственный бонус?",
+            "answer": "Приветственный бонус начисляется автоматически..."
+          }
+        ]
+      },
+      "cta": {
+        "gradient": "bg-gradient-to-r from-[#ff424d] to-[#ff2c39]",
+        "titleColor": "text-white",
+        "textColor": "text-white",
+        "content": {
+          "title": "Готовы начать игру?",
+          "description": "Зарегистрируйтесь сейчас и получите приветственный бонус до 100,000₽"
+        },
+        "buttons": {
+          "primary": {
+            "text": "Регистрация",
+            "border": "border-2 border-white",
+            "textColor": "text-white",
+            "hoverBg": "hover:bg-white",
+            "hoverText": "hover:text-[#ff424d]"
+          },
+          "secondary": {
+            "text": "Все бонусы",
+            "bg": "bg-white",
+            "textColor": "text-[#ff424d]",
+            "hoverBg": "hover:bg-gray-100"
+          }
+        }
+      },
+      "footer": {
+        "bgColor": "bg-[#2d1c1c]",
+        "borderColor": "border-[#563838]",
+        "textColor": "text-gray-300",
+        "hoverTextColor": "hover:text-white",
+        "cardBgColor": "bg-[#382323]",
+        "brandName": "VAVADA RED"
+      }
+    },
+    "registrationHero": {
+      "bgColor": "bg-gradient-to-br from-[#0f172a] to-[#1e293b]",
+      "stats": [
+        { "value": "2 мин", "key": "time" },
+        { "value": "200%", "key": "bonusPercent" },
+        { "value": "24/7", "key": "support" }
+      ],
+      "cta": {
+        "primary": {
+          "bg": "bg-gradient-to-r from-[#4f46e5] to-[#7c3aed]",
+          "hoverBg": "hover:from-[#7c3aed] hover:to-[#4f46e5]",
+          "shadow": "shadow-[#4f46e5]/30"
+        },
+        "secondary": {
+          "border": "border border-[#334155]",
+          "hoverBorder": "hover:border-[#4f46e5]/50",
+          "bg": "bg-[#1e293b]",
+          "hoverBg": "hover:bg-[#1e293b]/90"
+        }
+      },
+      "gradient": "bg-gradient-to-r from-[#4f46e5]/5 via-transparent to-[#1e293b]/10"
+    },
+    "registrationForm": {
+      "styles": {
+        "input": "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4f46e5] focus:border-transparent",
+        "button": "w-full bg-gradient-to-r from-[#4f46e5] to-[#7c3aed] hover:from-[#7c3aed] hover:to-[#4f46e5] text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-lg hover:shadow-xl"
+      }
+    },
+    "registrationSteps": {
+      "styles": {
+        "section": "bg-[#2a2a42] p-8",
+        "title": "text-3xl font-bold text-white mb-8 text-center",
+        "step": "bg-[#1c1c2d] rounded-xl p-6 border border-[#383856] hover:border-[#ff424d]/50 transition-colors",
+        "stepHeader": "flex items-center mb-4",
+        "stepNumber": "flex-shrink-0 w-12 h-12 rounded-full bg-[#ff424d]/10 flex items-center justify-center text-2xl font-bold text-[#ff424d]",
+        "stepTitle": "ml-4 text-xl font-semibold text-white",
+        "stepContent": "text-gray-400",
+        "item": "flex items-start",
+        "icon": "flex-shrink-0 w-5 h-5 text-[#ff424d] mt-0.5",
+        "itemText": "ml-2"
+      },
+      "steps": []
+    },
+    "verificationSection": {
+      "styles": {
+        "section": "bg-[#1e293b] p-8 mb-8",
+        "title": "text-2xl font-bold text-white mb-6",
+        "card": "bg-[#0f172a] rounded-xl p-6",
+        "cardTitle": "text-xl font-semibold text-white mb-4",
+        "list": "space-y-3 text-gray-300",
+        "item": "flex items-center",
+        "bullet": "text-[#4f46e5] mr-2"
+      }
+    },
+    "registrationFAQ": {
+      "styles": {
+        "section": "bg-[#1e293b] rounded-xl p-8",
+        "title": "text-2xl font-bold text-white mb-6",
+        "item": "bg-[#0f172a] rounded-xl p-6 mb-4 last:mb-0",
+        "question": "text-xl font-semibold text-white mb-3",
+        "answer": "text-gray-300"
+      }
+    }
+  }
+}

@@ -65,7 +65,7 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
     if (!router.isReady) return;
     
     const handleRouteChange = (url: string) => {
-      window.gtag?.("config", process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX", {
+      window.gtag?.("config", process.env.NEXT_PUBLIC_GA_ID || "G-YEZGGPKPNP", {
         page_path: url,
       });
     };

@@ -4,6 +4,7 @@ import en from '@/locales/en.json';
 import ru from '@/locales/ru.json';
 import Layout from '@/components/Layout';
 import UnderDevelopment from '@/components/UnderDevelopment';
+import Page404 from '@/components/Page404'; // Добавляем импорт
 
 interface PageTemplateProps {
   pageKey: 'slots' | 'bonuses' | 'mirror' | 'download' | 'payment' | 'registration' | '404';

@@ -6,24 +6,33 @@ import Layout from '@/components/Layout';
 import UnderDevelopment from '@/components/UnderDevelopment';
 
 interface PageTemplateProps {
-  pageKey: 'slots' | 'bonuses' | 'mirror' | 'download' | 'payment' | 'registration';
+  pageKey: 'slots' | 'bonuses' | 'mirror' | 'download' | 'payment' | 'registration' | '404';
 }
 
 const PageTemplate = ({ pageKey }: PageTemplateProps) => {
   const router = useRouter();
   const { locale } = router;
   
-  // Безопасное получение данных
   const getMetaData = () => {
     try {
       const translations = locale === 'ru' ? ru : en;
       
-      // Проверяем существование meta и pageKey
+      // Для 404 страницы
+      if (pageKey === '404') {
+        return {
+          title: locale === 'ru' 
+            ? "Страница не найдена | Vavada Casino" 
+            : "Page not found | Vavada Casino",
+          description: locale === 'ru'
+            ? "Извините, страница не найдена. Вернитесь на главную страницу Vavada Casino."
+            : "Sorry, page not found. Return to the Vavada Casino homepage."
+        };
+      }
+      
       if (translations.meta && translations.meta[pageKey]) {
         return translations.meta[pageKey];
       }
       
-      // Возвращаем fallback если что-то пошло не так
       return {
         title: "Vavada Casino",
         description: "Official Vavada casino website"
@@ -43,10 +52,11 @@ const PageTemplate = ({ pageKey }: PageTemplateProps) => {
     <Layout
       meta={{
         title: metaData.title,
-        description: metaData.description
+        description: metaData.description,
+        canonical: `/${locale}/${pageKey}`
       }}
     >
-      <UnderDevelopment />
+      {pageKey === '404' ? <Page404 /> : <UnderDevelopment />}
     </Layout>
   );
 };

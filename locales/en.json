@@ -5,6 +5,10 @@
       "description": "Official Vavada casino website with licensed games",
       "keywords": "casino, vavada, slots, bonuses, roulette"
     },
+    "404": {
+      "title": "Page not found | Vavada Casino",
+      "description": "Sorry, page not found. Return to the Vavada Casino homepage."
+    },
     "slots": {
       "title": "Vavada Slots",
       "description": "Play the best slot machines at Vavada Casino. Huge selection of games, big payouts!"

@@ -21,9 +21,10 @@ type PageProps = {
     register: string;
     login: string;
     game: string;
+    mirror: string;
+    download: string;
   };
 };
-
 export const getStaticPaths: GetStaticPaths = async () => ({
   paths: ["en", "ru"].map((lang) => ({ params: { lang } })),
   fallback: false,
@@ -43,6 +44,8 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
         register: nanoid(8),
         login: nanoid(8),
         game: nanoid(8),
+        mirror: nanoid(8),
+        download: nanoid(8),
       },
     },
   };
@@ -60,28 +63,33 @@ export default function RegistrationPage({
         register: nanoid(8),
         login: nanoid(8),
         game: nanoid(8),
+        mirror: nanoid(8), // Добавлено
+        download: nanoid(8), // Добавлено
       },
     [serverIds]
   );
 
   // Получаем мета-данные для страницы регистрации
   const registrationMeta = translations.meta?.registration || {
-    title: lang === "ru" 
-      ? "Регистрация в Vavada Casino | Создать аккаунт" 
-      : "Register at Vavada Casino | Create Account",
-    
-    description: lang === "ru" 
-      ? "Зарегистрируйтесь в Vavada Casino и получите бонус 100% до 100 000₽ + 100 фриспинов. Быстрая регистрация за 1 минуту." 
-      : "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute.",
-    
+    title:
+      lang === "ru"
+        ? "Регистрация в Vavada Casino | Создать аккаунт"
+        : "Register at Vavada Casino | Create Account",
+
+    description:
+      lang === "ru"
+        ? "Зарегистрируйтесь в Vavada Casino и получите бонус 100% до 100 000₽ + 100 фриспинов. Быстрая регистрация за 1 минуту."
+        : "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute.",
+
     // Используем общие ключевые слова из основного meta
-    keywords: translations.meta?.home?.keywords || 
-             (lang === "ru" 
-               ? "казино, vavada, регистрация, создать аккаунт, бонус за регистрацию" 
-               : "casino, vavada, register, create account, sign up bonus"),
-    
+    keywords:
+      translations.meta?.home?.keywords ||
+      (lang === "ru"
+        ? "казино, vavada, регистрация, создать аккаунт, бонус за регистрацию"
+        : "casino, vavada, register, create account, sign up bonus"),
+
     // Добавляем канонический URL
-    canonical: `/${lang}/registration`
+    canonical: `/${lang}/registration`,
   };
 
   return (
@@ -92,44 +100,52 @@ export default function RegistrationPage({
             {JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              "name": lang === "ru" 
-                ? "Регистрация в Vavada Casino" 
-                : "Registration at Vavada Casino",
-              "description": lang === "ru" 
-                ? "Пошаговая инструкция по регистрации в казино" 
-                : "Step-by-step registration guide",
-              "step": [
+              name:
+                lang === "ru"
+                  ? "Регистрация в Vavada Casino"
+                  : "Registration at Vavada Casino",
+              description:
+                lang === "ru"
+                  ? "Пошаговая инструкция по регистрации в казино"
+                  : "Step-by-step registration guide",
+              step: [
                 {
                   "@type": "HowToStep",
-                  "name": lang === "ru" ? "Заполнение данных" : "Fill in details",
-                  "text": lang === "ru" 
-                    ? "Введите email, пароль и выберите валюту" 
-                    : "Enter email, password and select currency"
+                  name: lang === "ru" ? "Заполнение данных" : "Fill in details",
+                  text:
+                    lang === "ru"
+                      ? "Введите email, пароль и выберите валюту"
+                      : "Enter email, password and select currency",
                 },
                 {
                   "@type": "HowToStep",
-                  "name": lang === "ru" ? "Подтверждение email" : "Email verification",
-                  "text": lang === "ru" 
-                    ? "Подтвердите свою электронную почту" 
-                    : "Confirm your email address"
+                  name:
+                    lang === "ru"
+                      ? "Подтверждение email"
+                      : "Email verification",
+                  text:
+                    lang === "ru"
+                      ? "Подтвердите свою электронную почту"
+                      : "Confirm your email address",
                 },
                 {
                   "@type": "HowToStep",
-                  "name": lang === "ru" ? "Активация бонуса" : "Bonus activation",
-                  "text": lang === "ru" 
-                    ? "Пополните счет и получите бонус" 
-                    : "Make a deposit and get your bonus"
-                }
-              ]
+                  name: lang === "ru" ? "Активация бонуса" : "Bonus activation",
+                  text:
+                    lang === "ru"
+                      ? "Пополните счет и получите бонус"
+                      : "Make a deposit and get your bonus",
+                },
+              ],
             })}
           </script>
         </Head>
-        
+
         <Header
           templateData={templateData}
           currentLang={lang}
           currentPage={
-            translations.header?.nav?.links?.registration || 
+            translations.header?.nav?.links?.registration ||
             (lang === "ru" ? "Регистрация" : "Registration")
           }
         />
@@ -141,7 +157,11 @@ export default function RegistrationPage({
           <VerificationSection templateData={templateData} lang={lang} />
           <RegistrationFAQ templateData={templateData} lang={lang} />
         </main>
-        <Footer templateData={templateData} lang={lang} footerData={translations.footer} />
+        <Footer
+          templateData={templateData}
+          lang={lang}
+          footerData={translations.footer}
+        />
       </Layout>
     </IdContext.Provider>
   );

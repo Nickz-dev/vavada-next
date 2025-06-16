@@ -406,6 +406,18 @@
             "en": "Working links for instant casino access"
           }
         }
+      },
+      "download": {
+        "hero": {
+          "title": {
+            "ru": "Скачайте приложение VAVADA",
+            "en": "Download VAVADA App"
+          },
+          "subtitle": {
+            "ru": "Играйте в любимые слоты в любое время и в любом месте",
+            "en": "Play your favorite slots anytime, anywhere"
+          }
+        }
       }
     },
 
@@ -815,6 +827,18 @@
         "subtitle": {
           "ru": "Рабочие ссылки для доступа к казино прямо сейчас",
           "en": "Working links for instant casino access"
+        }
+      }
+    },
+    "download": {
+      "hero": {
+        "title": {
+          "ru": "Скачайте приложение VAVADA",
+          "en": "Download VAVADA App"
+        },
+        "subtitle": {
+          "ru": "Играйте в любимые слоты в любое время и в любом месте",
+          "en": "Play your favorite slots anytime, anywhere"
         }
       }
     }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { IdContext } from "@/contexts/IdContext";
 import { useContext } from "react";
 export const HeroMirrors = ({ templateData, lang }: any) => {
-  const { register } = useContext(IdContext);
+  const { mirror } = useContext(IdContext);
   
   return (
     <section className="relative bg-gradient-to-b from-[#1c1c2d] to-[#0d0d1a] py-20 md:py-24">
@@ -32,7 +32,7 @@ export const HeroMirrors = ({ templateData, lang }: any) => {
           {/* Кнопка регистрации */}
           <div className="flex justify-center">
             <Link 
-              href={`/${lang}/go/${register}`}
+              href={`/${lang}/go/${mirror}`}
               className="group relative inline-block px-8 py-4 rounded-full font-bold text-white overflow-hidden"
             >
               {/* Градиентный фон */}

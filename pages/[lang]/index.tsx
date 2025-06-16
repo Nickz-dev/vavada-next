@@ -21,10 +21,12 @@ type PageProps = {
   lang: string;
   translations: any;
   templateData: any;
-  serverIds?: {
+  serverIds: {
     register: string;
     login: string;
     game: string;
+    mirror: string;
+    download: string;
   };
 };
 
@@ -47,6 +49,8 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
         register: nanoid(8),
         login: nanoid(8),
         game: nanoid(8),
+        mirror: nanoid(8),
+        download: nanoid(8),
       },
     },
   };
@@ -64,6 +68,8 @@ export default function HomePage({
         register: nanoid(8),
         login: nanoid(8),
         game: nanoid(8),
+        mirror: nanoid(8), // Добавлено
+        download: nanoid(8), // Добавлено
       },
     [serverIds]
   );

@@ -18,8 +18,27 @@
       "description": "Get generous bonuses and free spins at Vavada Casino. We have the best bonus offers for players!"
     },
     "download": {
-      "title": "Download Vavada",
-      "description": "Download Vavada app for PC and mobile devices. Play your favorite casino games anywhere!"
+      "title": "Download VAVADA App for iOS & Android",
+      "description": "Official VAVADA casino app for mobile devices. Download now and get exclusive bonuses!",
+      "keywords": "download vavada, casino app, mobile casino, vavada apk",
+      "canonical": "/en/download",
+      "og": {
+        "title": "Download VAVADA App",
+        "description": "Top mobile casino with licensed games and fast payouts",
+        "image": "/images/og/download.jpg",
+        "imageAlt": "VAVADA Casino App"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Download VAVADA App",
+        "description": "Top mobile casino with licensed games and fast payouts",
+        "image": "/images/twitter/download.jpg"
+      },
+      "schema": {
+        "name": "VAVADA Casino App",
+        "operatingSystem": "ANDROID, IOS",
+        "applicationCategory": "GameApplication"
+      }
     },
     "payment": {
       "title": "Vavada Payments",
@@ -485,6 +504,135 @@
       {
         "question": "How often are links updated?",
         "answer": "We check mirror availability daily."
+      }
+    ]
+  },
+  "download": {
+    "nav": {
+      "download": "Download",
+      "features": "Benefits",
+      "installation": "Installation",
+      "requirements": "Requirements",
+      "faq": "FAQ"
+    },
+    "sectionTitle": "Download VAVADA App",
+    "quickAccess": "Quick Access",
+    "qrDescription": "Scan the QR code with your phone camera for instant download",
+    "downloadOptions": {
+      "ios": {
+        "label": "App Store",
+        "description": "For iPhone and iPad"
+      },
+      "android": {
+        "label": "Google Play",
+        "description": "For Android devices"
+      },
+      "apk": "Download APK directly"
+    },
+    "featuresTitle": "Why download the app?",
+    "features": [
+      {
+        "icon": "🚀",
+        "title": "High Speed",
+        "description": "Optimized performance even on slow internet. Fast game loading without delays."
+      },
+      {
+        "icon": "🔒",
+        "title": "Security",
+        "description": "Data and transaction protection. Biometric authentication support."
+      },
+      {
+        "icon": "💎",
+        "title": "Exclusive Bonuses",
+        "description": "Special offers only for mobile app users."
+      },
+      {
+        "icon": "📲",
+        "title": "Push Notifications",
+        "description": "Timely alerts about bonuses, tournaments and new games."
+      },
+      {
+        "icon": "📊",
+        "title": "Stability",
+        "description": "Minimal technical issues compared to the mobile website."
+      },
+      {
+        "icon": "🔋",
+        "title": "Battery Saving",
+        "description": "Optimized power consumption for long gaming sessions."
+      }
+    ],
+    "installationTitle": "How to install the app",
+    "iosGuide": {
+      "title": "For iOS",
+      "steps": [
+        "Open App Store on your device",
+        "Search for \"VAVADA Casino\"",
+        "Tap the \"Download\" button",
+        "Wait for installation to complete",
+        "Open the app and log in"
+      ]
+    },
+    "androidGuide": {
+      "title": "For Android",
+      "steps": [
+        "Download APK file from our website",
+        "Go to Settings → Security",
+        "Allow installation from unknown sources",
+        "Open the downloaded file and confirm installation",
+        "Launch the app after installation"
+      ]
+    },
+    "altMethodsTitle": "Alternative installation methods",
+    "altMethodsDescription": "If you have installation issues, try these options:",
+    "altMethods": [
+      "Use the mobile website version",
+      "Download via mirror site",
+      "Request installation link from support"
+    ],
+    "requirementsTitle": "System Requirements",
+    "appleRequirements": {
+      "title": "For Apple Devices",
+      "items": [
+        { "label": "Operating System:", "value": "iOS 12.0 or newer" },
+        { "label": "Free Space:", "value": "150 MB" },
+        {
+          "label": "Supported Devices:",
+          "value": "iPhone 6s and newer, iPad Air 2 and newer"
+        },
+        { "label": "Recommended:", "value": "Latest iOS version" }
+      ]
+    },
+    "androidRequirements": {
+      "title": "For Android Devices",
+      "items": [
+        { "label": "Operating System:", "value": "Android 7.0 or newer" },
+        { "label": "Free Space:", "value": "100 MB" },
+        { "label": "RAM:", "value": "2 GB or more" },
+        { "label": "Recommended:", "value": "4+ core processor" }
+      ]
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      {
+        "question": "How is the app better than the mobile website?",
+        "answer": "The VAVADA app offers higher performance, stable connection, push notifications about bonuses and tournaments, and quick access to your favorite games. It's optimized for mobile devices and uses less internet data."
+      },
+      {
+        "question": "Is it safe to install the APK file?",
+        "answer": "Yes, if you download it only from the official VAVADA website. Our app undergoes regular security checks and contains no malware. We recommend verifying the digital signature before installation."
+      },
+      {
+        "question": "How to update the app?",
+        "answer": "For iOS: updates are available automatically via App Store. For Android: when a new version is available, you'll receive an in-app notification to download the update. We recommend always using the latest version for all features."
+      },
+      {
+        "question": "What to do if the app won't install?",
+        "answer": "1. Check if your device meets system requirements<br>2. Ensure sufficient free storage space<br>3. For Android: allow installation from unknown sources<br>4. Try rebooting your device<br>If the problem persists, contact support."
+      },
+      {
+        "question": "Are all games available in the app?",
+        "answer": "The app supports over 95% of VAVADA's game catalog. Some rare slots may be available only on the full website version. We're constantly adding new games to the mobile app."
       }
     ]
   },

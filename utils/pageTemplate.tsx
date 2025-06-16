@@ -7,7 +7,7 @@ import UnderDevelopment from '@/components/UnderDevelopment';
 import Page404 from '@/components/Page404'; // Добавляем импорт
 
 interface PageTemplateProps {
-  pageKey: 'slots' | 'bonuses' | 'download' | 'payment' | 'registration' | '404';
+  pageKey: 'slots' | 'bonuses' | 'payment' | 'registration' | '404';
 }
 
 const PageTemplate = ({ pageKey }: PageTemplateProps) => {

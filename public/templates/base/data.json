@@ -394,6 +394,18 @@
           "question": "text-xl font-semibold text-white mb-3",
           "answer": "text-gray-300"
         }
+      },
+      "mirrors": {
+        "hero": {
+          "title": {
+            "ru": "Актуальные зеркала VAVADA",
+            "en": "Current VAVADA Mirrors"
+          },
+          "subtitle": {
+            "ru": "Рабочие ссылки для доступа к казино прямо сейчас",
+            "en": "Working links for instant casino access"
+          }
+        }
       }
     },
 
@@ -792,6 +804,18 @@
         "item": "bg-[#0f172a] rounded-xl p-6 mb-4 last:mb-0",
         "question": "text-xl font-semibold text-white mb-3",
         "answer": "text-gray-300"
+      }
+    },
+    "mirrors": {
+      "hero": {
+        "title": {
+          "ru": "Актуальные зеркала VAVADA",
+          "en": "Current VAVADA Mirrors"
+        },
+        "subtitle": {
+          "ru": "Рабочие ссылки для доступа к казино прямо сейчас",
+          "en": "Working links for instant casino access"
+        }
       }
     }
   }

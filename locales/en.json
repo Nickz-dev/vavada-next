@@ -17,10 +17,6 @@
       "title": "Vavada Bonuses",
       "description": "Get generous bonuses and free spins at Vavada Casino. We have the best bonus offers for players!"
     },
-    "mirror": {
-      "title": "Vavada Mirror",
-      "description": "Current Vavada mirror site to bypass restrictions. Play without limitations anytime!"
-    },
     "download": {
       "title": "Download Vavada",
       "description": "Download Vavada app for PC and mobile devices. Play your favorite casino games anywhere!"
@@ -31,7 +27,44 @@
     },
     "registration": {
       "title": "Register at Vavada Casino | Create Account",
-      "description": "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute."
+      "description": "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute.",
+      "keywords": "casino, vavada, register, create account, sign up bonus",
+      "canonical": "/en/registration",
+      "og": {
+        "title": "Vavada Casino Registration | 100% Bonus + 100 Free Spins",
+        "description": "Quick sign up at Vavada Casino in 1 minute. Get 100% bonus on your first deposit!",
+        "image": "/images/og/registration.jpg",
+        "imageAlt": "Vavada Casino Registration"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Vavada Casino Registration | 100% Bonus + 100 Free Spins",
+        "description": "Quick sign up at Vavada Casino in 1 minute. Get 100% bonus on your first deposit!",
+        "image": "/images/twitter/registration.jpg"
+      },
+      "schema": {
+        "name": "Registration at Vavada Casino",
+        "description": "Step-by-step registration guide",
+        "steps": [
+          {
+            "name": "Fill in details",
+            "text": "Enter email, password and select currency"
+          },
+          {
+            "name": "Email verification",
+            "text": "Confirm your email address"
+          },
+          {
+            "name": "Bonus activation",
+            "text": "Make a deposit and get your bonus"
+          }
+        ]
+      }
+    },
+    "mirrors": {
+      "title": "VAVADA Working Mirror Today 2025 - Current Links",
+      "description": "Current working mirrors for VAVADA Casino today ⚡ Quick access to official casino site ✓ Updated links 2025",
+      "keywords": "vavada mirror, working mirror, vavada casino, casino access"
     }
   },
   "header": {
@@ -414,6 +447,44 @@
       {
         "question": "What currencies are available?",
         "answer": "Available currencies: RUB, USD, EUR. You can choose currency during registration or in your account settings."
+      }
+    ]
+  },
+  "mirrors": {
+    "nav": {
+      "mirrors": "Current Mirrors",
+      "mirrorsDesc": "Working links for today",
+      "howTo": "How to Use",
+      "howToDesc": "Access instructions",
+      "benefits": "Benefits",
+      "benefitsDesc": "Why you should use",
+      "faq": "FAQ",
+      "faqDesc": "Common questions"
+    },
+    "currentMirror": "⚡ Working mirror for today:",
+    "workingStatus": "Working",
+    "alternative": "Alternative access mirrors:",
+    "howToTitle": "How to Use VAVADA Mirror",
+    "benefitsTitle": "Mirror Benefits",
+    "faqTitle": "Frequently Asked Questions",
+    "benefitsList": [
+      "Access when main site is blocked",
+      "Full casino functionality",
+      "Automatic link updates",
+      "Account data security"
+    ],
+    "faqItems": [
+      {
+        "question": "What is a site mirror?",
+        "answer": "An exact copy of the main site with different address to bypass restrictions."
+      },
+      {
+        "question": "Do I need to register again?",
+        "answer": "No, use your existing credentials to log in."
+      },
+      {
+        "question": "How often are links updated?",
+        "answer": "We check mirror availability daily."
       }
     ]
   },

@@ -10,7 +10,7 @@ export const MirrorsList = ({ translations, lang }: any) => (
         {translations.mirrors?.currentMirror || "⚡ Рабочее зеркало на сегодня:"}
       </p>
       <div className="flex items-center justify-between p-3 bg-[#232338] rounded">
-        <span className="font-medium">vavada-casino.com</span>
+        <span className="font-medium">vavada-0001.com</span>
         <span className="text-[#4CAF50] flex items-center">
           <span className="w-2 h-2 bg-[#4CAF50] rounded-full mr-2"></span>
           {translations.mirrors?.workingStatus || "Работает"}
@@ -22,7 +22,7 @@ export const MirrorsList = ({ translations, lang }: any) => (
       {translations.mirrors?.alternative || "Альтернативные зеркала для доступа:"}
     </p>
     <div className="space-y-3">
-      {['vavada-casino.xyz', 'vavada-casino.site'].map((mirror, idx) => (
+      {['vavada-sign-up.online', 'vavada-sign-in.online', 'vavada-mirror-2025.online', 'vavada-download.online'].map((mirror, idx) => (
         <div key={idx} className="flex items-center justify-between p-3 bg-[#1c1c2d] rounded">
           <span>{mirror}</span>
           <span className="text-[#4CAF50]">

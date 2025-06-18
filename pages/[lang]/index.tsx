@@ -27,6 +27,8 @@ type PageProps = {
     game: string;
     mirror: string;
     download: string;
+    payment: string;
+    bonus: string;
   };
 };
 
@@ -51,6 +53,8 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
         game: nanoid(8),
         mirror: nanoid(8),
         download: nanoid(8),
+        payment: nanoid(8),
+        bonus: nanoid(8),
       },
     },
   };
@@ -69,7 +73,9 @@ export default function HomePage({
         login: nanoid(8),
         game: nanoid(8),
         mirror: nanoid(8), // Добавлено
-        download: nanoid(8), // Добавлено
+        download: nanoid(8),
+        payment: nanoid(8),
+        bonus: nanoid(8),
       },
     [serverIds]
   );

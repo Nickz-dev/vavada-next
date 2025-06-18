@@ -418,6 +418,30 @@
             "en": "Play your favorite slots anytime, anywhere"
           }
         }
+      },
+      "payments": {
+        "hero": {
+          "title": {
+            "ru": "Платежные методы VAVADA",
+            "en": "VAVADA Payment Methods"
+          },
+          "subtitle": {
+            "ru": "Безопасные и быстрые транзакции",
+            "en": "Secure and fast transactions"
+          }
+        }
+      },
+      "bonuses": {
+        "hero": {
+          "title": {
+            "ru": "Бонусы VAVADA",
+            "en": "VAVADA Bonuses"
+          },
+          "subtitle": {
+            "ru": "Эксклюзивные предложения для игроков",
+            "en": "Exclusive offers for players"
+          }
+        }
       }
     },
 
@@ -839,6 +863,30 @@
         "subtitle": {
           "ru": "Играйте в любимые слоты в любое время и в любом месте",
           "en": "Play your favorite slots anytime, anywhere"
+        }
+      }
+    },
+    "payments": {
+      "hero": {
+        "title": {
+          "ru": "Платежные методы VAVADA",
+          "en": "VAVADA Payment Methods"
+        },
+        "subtitle": {
+          "ru": "Безопасные и быстрые транзакции",
+          "en": "Secure and fast transactions"
+        }
+      }
+    },
+    "bonuses": {
+      "hero": {
+        "title": {
+          "ru": "Бонусы VAVADA",
+          "en": "VAVADA Bonuses"
+        },
+        "subtitle": {
+          "ru": "Эксклюзивные предложения для игроков",
+          "en": "Exclusive offers for players"
         }
       }
     }

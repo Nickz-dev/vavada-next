@@ -22,6 +22,8 @@ type PageProps = {
     game: string;
     mirror: string;
     download: string;
+    payment: string;
+    bonus: string;
   };
 };
 
@@ -46,6 +48,8 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
         game: nanoid(8),
         mirror: nanoid(8),
         download: nanoid(8),
+        payment: nanoid(8),
+        bonus: nanoid(8),
       },
     },
   };
@@ -65,6 +69,8 @@ export default function MirrorsPage({
         game: nanoid(8),
         mirror: nanoid(8), // Добавлено
         download: nanoid(8), // Добавлено
+        payment: nanoid(8),
+        bonus: nanoid(8),
       },
     [serverIds]
   );
@@ -127,14 +133,14 @@ export default function MirrorsPage({
           <HeroMirrors templateData={templateData} lang={lang} />
           <div className="container mx-auto px-4 py-8">
             <article className="prose prose-invert max-w-none">
-              <h1
+              <h2
                 id="top"
                 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center"
               >
                 {lang === "ru"
                   ? "Рабочее зеркало VAVADA на сегодня 2025"
                   : "Working VAVADA Mirror Today 2025"}
-              </h1>
+              </h2>
 
               <nav className="bg-[#2a2a42] rounded-xl p-6 mb-8">
                 <h2 className="sr-only">

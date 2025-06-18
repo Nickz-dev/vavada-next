@@ -14,8 +14,26 @@
       "description": "Play the best slot machines at Vavada Casino. Huge selection of games, big payouts!"
     },
     "bonuses": {
-      "title": "Vavada Bonuses",
-      "description": "Get generous bonuses and free spins at Vavada Casino. We have the best bonus offers for players!"
+      "title": "VAVADA Bonuses | Welcome Package & Cashback",
+      "description": "Exclusive casino bonuses at VAVADA. 100% welcome bonus up to €1000 + free spins, cashback and loyalty program.",
+      "keywords": "vavada bonuses, welcome bonus, free spins, cashback",
+      "canonical": "/en/bonuses",
+      "og": {
+        "title": "VAVADA Bonuses & Promotions",
+        "description": "The most profitable bonuses for VAVADA casino players",
+        "image": "/images/og/bonuses.jpg",
+        "imageAlt": "VAVADA Bonuses"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "VAVADA Bonuses & Promotions",
+        "description": "The most profitable bonuses for VAVADA casino players",
+        "image": "/images/twitter/bonuses.jpg"
+      },
+      "schema": {
+        "name": "VAVADA Casino Bonuses",
+        "description": "Exclusive bonuses and promotions for players"
+      }
     },
     "download": {
       "title": "Download VAVADA App for iOS & Android",
@@ -40,9 +58,27 @@
         "applicationCategory": "GameApplication"
       }
     },
-    "payment": {
-      "title": "Vavada Payments",
-      "description": "Fast and secure deposit and withdrawal methods at Vavada Casino."
+    "payments": {
+      "title": "Payment Methods at VAVADA | Deposits & Withdrawals",
+      "description": "Secure and fast deposit and withdrawal methods at VAVADA casino. All payment options with limits and fees.",
+      "keywords": "vavada payments, deposit, withdrawal, payment methods",
+      "canonical": "/en/payments",
+      "og": {
+        "title": "VAVADA Payment Systems",
+        "description": "All deposit and withdrawal methods at VAVADA casino",
+        "image": "/images/og/payments.jpg",
+        "imageAlt": "VAVADA Payment Methods"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "VAVADA Payment Systems",
+        "description": "All deposit and withdrawal methods at VAVADA casino",
+        "image": "/images/twitter/payments.jpg"
+      },
+      "schema": {
+        "name": "VAVADA Casino Payment Methods",
+        "description": "Information about deposit and withdrawal methods"
+      }
     },
     "registration": {
       "title": "Register at Vavada Casino | Create Account",
@@ -636,6 +672,153 @@
       }
     ]
   },
+  "payments": {
+    "nav": {
+      "deposit": "Deposit Methods",
+      "withdrawal": "Withdrawal Methods",
+      "limits": "Limits",
+      "howto": "Instructions",
+      "faq": "FAQ"
+    },
+    "depositTitle": "Deposit Methods",
+    "depositMethods": [
+      {
+        "title": "Bank Cards",
+        "items": ["VISA/Mastercard", "MIR", "Instant Processing"]
+      },
+      {
+        "title": "Cryptocurrencies",
+        "items": ["Bitcoin (BTC)", "Ethereum (ETH)", "USDT (TRC20)"]
+      },
+      {
+        "title": "E-wallets",
+        "items": ["Piastrix", "VouWallet", "Perfect Money"]
+      }
+    ],
+    "withdrawalTitle": "Withdrawal Methods",
+    "withdrawalMethods": [
+      {
+        "method": "Bank Cards",
+        "time": "1-24 hours",
+        "min": "1000₽",
+        "fee": "0%"
+      },
+      {
+        "method": "Cryptocurrencies",
+        "time": "5-15 minutes",
+        "min": "2000₽",
+        "fee": "0%"
+      },
+      {
+        "method": "E-wallets",
+        "time": "15-60 minutes",
+        "min": "500₽",
+        "fee": "0%"
+      }
+    ],
+    "limitsTitle": "Limits and Restrictions",
+    "depositLimits": [
+      { "label": "Minimum:", "value": "100₽" },
+      { "label": "Maximum:", "value": "500 000₽" },
+      { "label": "Daily limit:", "value": "1 000 000₽" }
+    ],
+    "withdrawalLimits": [
+      { "label": "Minimum:", "value": "500₽" },
+      { "label": "Maximum:", "value": "300 000₽" },
+      { "label": "Daily limit:", "value": "500 000₽" }
+    ],
+    "howtoTitle": "How to Deposit/Withdraw",
+    "depositSteps": [
+      "Log in to your account",
+      "Click the \"Deposit\" button",
+      "Select payment method",
+      "Enter amount",
+      "Confirm transaction"
+    ],
+    "withdrawalSteps": [
+      "Log in to your account",
+      "Click the \"Withdraw\" button",
+      "Select withdrawal method",
+      "Enter amount and details",
+      "Confirm transaction"
+    ],
+    "faqTitle": "Frequently Asked Questions",
+    "faqItems": [
+      {
+        "question": "How long does withdrawal take?",
+        "answer": "Processing time depends on the method. Cryptocurrencies: 5-15 min, e-wallets: up to 1 hour, bank cards: up to 24 hours."
+      },
+      {
+        "question": "Is verification required for withdrawal?",
+        "answer": "Yes, verification is required for the first withdrawal to ensure the security of your funds."
+      },
+      {
+        "question": "Are there transaction fees?",
+        "answer": "VAVADA does not charge fees for deposits or withdrawals. Payment system fees may apply."
+      }
+    ]
+  },
+  "bonuses": {
+    "nav": {
+      "welcome": "Welcome Bonus",
+      "loyalty": "Loyalty Program",
+      "cashback": "Cashback",
+      "terms": "Terms & Conditions"
+    },
+    "welcomeTitle": "Welcome Package",
+    "firstDeposit": {
+      "title": "First Deposit",
+      "items": [
+        "100% bonus up to €1000",
+        "100 free spins in Book of Dead",
+        "Minimum deposit €10"
+      ]
+    },
+    "howToGet": {
+      "title": "How to Get",
+      "steps": [
+        "Register on the site",
+        "Deposit from €10",
+        "Bonus will be credited automatically",
+        "Wager the bonus with x35 wager"
+      ]
+    },
+    "loyaltyTitle": "Loyalty Program",
+    "loyaltyTiers": [
+      {
+        "title": "Silver",
+        "items": ["5% cashback", "Personal promotions", "Deposit bonuses"]
+      },
+      {
+        "title": "Gold",
+        "items": ["7% cashback", "Increased limits", "Exclusive bonuses"]
+      },
+      {
+        "title": "Diamond",
+        "items": ["10% cashback", "VIP support", "Special privileges"]
+      }
+    ],
+    "cashbackTitle": "Weekly Cashback",
+    "cashbackConditions": {
+      "title": "Conditions",
+      "items": ["Up to 10% of lost bets", "Accrued every Monday", "x5 wager"]
+    },
+    "cashbackActivation": {
+      "title": "How to Activate",
+      "steps": [
+        "Log in to your account",
+        "Go to the \"Bonuses\" section",
+        "Click \"Activate Cashback\""
+      ]
+    },
+    "termsTitle": "Terms & Conditions",
+    "termsItems": [
+      "All bonuses are available only for adult players after account verification",
+      "Maximum bet when wagering the bonus is €5",
+      "Bonus validity period is 7 days from activation",
+      "Administration reserves the right to change bonus terms"
+    ]
+  },
   "underDevelopment": {
     "title": "Page under development",
     "message": "We're working hard on this page. Please check back later.",
@@ -645,7 +828,7 @@
     "about": {
       "title": "About casino",
       "links": {
-        "home": "Home",
+        "#home": "Home",
         "mirrors": "Mirrors",
         "registration": "Registration",
         "download": "Download"

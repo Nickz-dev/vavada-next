@@ -1,12 +1,14 @@
 // contexts/IdContext.tsx
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from "react";
 
 export const IdContext = createContext({
-  register: 'register',
-  login: 'login',
-  game: 'game',
-  mirror: 'mirror',
-  download: 'download',
+  register: "register",
+  login: "login",
+  game: "game",
+  mirror: "mirror",
+  download: "download",
+  payment: "payment",
+  bonus: "bonus",
 });
 
 export const useIds = () => useContext(IdContext);

@@ -84,8 +84,8 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
         <link rel="canonical" href={canonicalUrl} />
         
         <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${cleanPath}`} />
-        <link rel="alternate" hrefLang="ru" href={`${siteUrl}/ru${cleanPath}`} />
-        <link rel="alternate" hrefLang="en" href={`${siteUrl}/en${cleanPath}`} />
+        <link rel="alternate" hrefLang="ru" href={`${siteUrl}/ru$`} />
+        <link rel="alternate" hrefLang="en" href={`${siteUrl}/en$`} />
         
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />

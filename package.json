@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.53.1",
     "@tailwindcss/cli": "^4.1.10",
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^20.19.0",

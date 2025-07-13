@@ -1,22 +1,13 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { getCookie } from "cookies-next";
+
 
 export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // Проверяем сохраненный язык в куках/локалсторадж
-    const savedLang = getCookie("preferred_lang");
-    // Определяем язык браузера (только на клиенте)
-    const browserLang =
-      typeof window !== "undefined" ? navigator.language.split("-")[0] : "ru";
-    const supportedLangs = ["ru", "en"];
-
-    // Исправленная строка с правильными скобками
-    const defaultLang =
-      savedLang || (supportedLangs.includes(browserLang) ? browserLang : "ru");
-    router.push(`/${defaultLang}`);
+    // Всегда редиректим на русский язык
+    router.push('/ru');
   }, [router]);
 
   return (

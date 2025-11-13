@@ -53,7 +53,7 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
   const description = meta.description || pageMeta?.description || "Официальный сайт казино Vavada";
   const keywords = meta.keywords || pageMeta?.keywords || "казино, vavada, игровые автоматы, бонусы";
   
-  const siteUrl = "https://vavada-0010.com";
+  const siteUrl = "https://vavada-0011.com";
   const cleanPath = asPath.split('?')[0]; // Убираем query-параметры
   
   const canonicalUrl = meta.canonical 

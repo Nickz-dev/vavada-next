@@ -1,22 +1,158 @@
 {
+  "bonuses": {
+    "nav": {
+      "welcome": "Welcome",
+      "loyalty": "Loyalty",
+      "cashback": "Cashback",
+      "terms": "Rules"
+    },
+    "welcomeTitle": "Vavada welcome package",
+    "firstDeposit": {
+      "title": "What’s included",
+      "items": [
+        "100% bonus up to €1000 / $1000",
+        "100 free spins in the featured slot",
+        "x30 wager on bonus, x15 on free spins"
+      ]
+    },
+    "howToGet": {
+      "title": "Activation steps",
+      "steps": [
+        "Create an account and confirm email",
+        "Enter promo code WELCOME100 (optional)",
+        "Deposit from €20 / $20",
+        "Pick a slot for the spins"
+      ]
+    },
+    "loyaltyTitle": "Loyalty tiers",
+    "loyaltyTiers": [
+      {
+        "title": "Silver",
+        "items": ["5% cashback", "Weekly promo codes", "Fast support"]
+      },
+      {
+        "title": "Gold",
+        "items": ["7% cashback", "Higher limits", "Reload up to 60%"]
+      },
+      {
+        "title": "Diamond",
+        "items": ["10% cashback", "Personal host", "VIP tournaments"]
+      }
+    ],
+    "cashbackTitle": "How cashback works",
+    "cashbackConditions": {
+      "title": "Core rules",
+      "items": [
+        "Credited every Monday",
+        "Up to 10% of net losses",
+        "x5 wager, max bet €5 / ₽500"
+      ]
+    },
+    "cashbackActivation": {
+      "title": "Activation",
+      "steps": [
+        "Open the “Bonuses” tab",
+        "Press “Claim cashback”",
+        "Confirm and start playing"
+      ]
+    },
+    "termsTitle": "Bonus policy",
+    "termsItems": [
+      "Bonuses are available for 18+ players after identity confirmation",
+      "Max bet while wagering is €5 / $5 / ₽500",
+      "Welcome bonus lasts 7 days, promo codes — 24h",
+      "We may adjust terms with a push notification beforehand"
+    ]
+  },
+  "payments": {
+    "nav": {
+      "deposit": "Deposits",
+      "withdrawal": "Withdrawals",
+      "limits": "Limits",
+      "howto": "Guides",
+      "faq": "FAQ"
+    },
+    "depositTitle": "Ways to top up",
+    "depositMethods": [
+      {
+        "title": "Bank cards",
+        "items": ["VISA / Mastercard / MIR", "Instant processing", "3-D Secure"]
+      },
+      {
+        "title": "Cryptocurrency",
+        "items": ["Bitcoin", "Ethereum", "USDT TRC20 / BEP20", "Litecoin"]
+      },
+      {
+        "title": "E-wallets",
+        "items": ["Piastrix", "VK Pay", "Perfect Money", "Advcash"]
+      }
+    ],
+    "withdrawalTitle": "Payout speed",
+    "withdrawalMethods": [
+      { "method": "Cards (CIS/EU)", "time": "15-60 min", "min": "₽1000", "fee": "0%" },
+      { "method": "Crypto", "time": "5-15 min", "min": "₽2000", "fee": "0%" },
+      { "method": "E-wallets", "time": "5-30 min", "min": "₽500", "fee": "0%" }
+    ],
+    "limitsTitle": "Limits 2025",
+    "depositLimits": [
+      { "label": "Min deposit", "value": "₽100 / $2" },
+      { "label": "Max per transaction", "value": "₽500 000 / $5 000" },
+      { "label": "Daily cap", "value": "₽1 000 000" }
+    ],
+    "withdrawalLimits": [
+      { "label": "Min withdrawal", "value": "₽500" },
+      { "label": "Max per request", "value": "₽300 000" },
+      { "label": "VIP cap", "value": "₽1 500 000" }
+    ],
+    "howtoTitle": "Step-by-step guides",
+    "depositSteps": [
+      "Sign in to your profile",
+      "Open the “Deposit” section",
+      "Pick a method and enter the amount",
+      "Confirm via 3-D Secure or crypto signature",
+      "Receive a receipt by email"
+    ],
+    "withdrawalSteps": [
+      "Go to “Withdraw funds”",
+      "Select a saved method",
+      "Enter amount + confirmation code",
+      "Wait for the push notification",
+      "Receive funds to your details"
+    ],
+    "faqTitle": "Payments FAQ",
+    "faqItems": [
+      {
+        "question": "Does Vavada charge fees?",
+        "answer": "No. Only banks or blockchain networks can add a fee, and we show it before confirmation."
+      },
+      {
+        "question": "Can I cash out without KYC?",
+        "answer": "One withdrawal up to ₽10 000 is allowed. Larger payouts require verification."
+      },
+      {
+        "question": "What if a transaction is pending?",
+        "answer": "Track the status in History. If it takes more than 30 minutes, contact support with the receipt."
+      }
+    ]
+  },
   "meta": {
     "home": {
-      "title": "Vavada Casino — Official Site",
-      "description": "Official Vavada casino website with licensed games",
-      "keywords": "casino, vavada, slots, bonuses, roulette"
+      "title": "Vavada online casino — login, mirror & bonuses 2025",
+      "description": "Official Vavada online casino hub: working mirror today, instant login, registration, bonus codes and fast access to slots.",
+      "keywords": "Vavada, VAVADA, Vavada online casino, Vavada mirror, Vavada login, Vavada registration, play slots online, Vavada bonuses, cashback, promo codes"
     },
     "404": {
-      "title": "Page not found | Vavada Casino",
-      "description": "Sorry, page not found. Return to the Vavada Casino homepage."
+      "title": "Page not found | Vavada online casino",
+      "description": "This page doesn't exist. Check the URL or head back to the refreshed Vavada online casino homepage."
     },
     "slots": {
-      "title": "Vavada Slots",
-      "description": "Play the best slot machines at Vavada Casino. Huge selection of games, big payouts!"
+      "title": "Vavada slots — play online without blocks",
+      "description": "Browse the Vavada slot lobby: Megaways, jackpots, classics and live slots with instant launch via the working mirror."
     },
     "bonuses": {
-      "title": "VAVADA Bonuses | Welcome Package & Cashback",
-      "description": "Exclusive casino bonuses at VAVADA. 100% welcome bonus up to €1000 + free spins, cashback and loyalty program.",
-      "keywords": "vavada bonuses, welcome bonus, free spins, cashback",
+      "title": "VAVADA bonuses — welcome pack, promo codes & cashback",
+      "description": "Fresh Vavada bonuses: 100% first deposit boost, free spins, weekly cashback and promo codes that work through mirrors.",
+      "keywords": "Vavada bonuses, Vavada promo codes, Vavada free spins, Vavada cashback, reload bonus",
       "canonical": "/en/bonuses",
       "og": {
         "title": "VAVADA Bonuses & Promotions",
@@ -36,9 +172,9 @@
       }
     },
     "download": {
-      "title": "Download VAVADA App for iOS & Android",
-      "description": "Official VAVADA casino app for mobile devices. Download now and get exclusive bonuses!",
-      "keywords": "download vavada, casino app, mobile casino, vavada apk",
+      "title": "Download VAVADA app — iOS, Android, APK",
+      "description": "Vavada online casino app with mirror login, push alerts and instant access to slots and live dealers.",
+      "keywords": "download Vavada, Vavada app, Vavada mobile casino, Vavada APK, mirror login",
       "canonical": "/en/download",
       "og": {
         "title": "Download VAVADA App",
@@ -59,9 +195,9 @@
       }
     },
     "payments": {
-      "title": "Payment Methods at VAVADA | Deposits & Withdrawals",
-      "description": "Secure and fast deposit and withdrawal methods at VAVADA casino. All payment options with limits and fees.",
-      "keywords": "vavada payments, deposit, withdrawal, payment methods",
+      "title": "VAVADA payments — deposits, withdrawals & limits 2025",
+      "description": "All Vavada payment options: bank cards, crypto, wallets. See limits, fees and payout speed breakdown.",
+      "keywords": "Vavada payments, Vavada withdrawal, Vavada deposit, Vavada limits, crypto payouts",
       "canonical": "/en/payments",
       "og": {
         "title": "VAVADA Payment Systems",
@@ -81,9 +217,9 @@
       }
     },
     "registration": {
-      "title": "Register at Vavada Casino | Create Account",
-      "description": "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute.",
-      "keywords": "casino, vavada, register, create account, sign up bonus",
+      "title": "Register at Vavada online casino — login in 1 minute",
+      "description": "Create a Vavada account, confirm your email and grab a 100% bonus + free spins. Full KYC tips and activation guide.",
+      "keywords": "Vavada registration, Vavada login, create Vavada account, sign up bonus, Vavada online casino",
       "canonical": "/en/registration",
       "og": {
         "title": "Vavada Casino Registration | 100% Bonus + 100 Free Spins",
@@ -117,9 +253,9 @@
       }
     },
     "mirrors": {
-      "title": "VAVADA Working Mirror Today 2025 - Current Links",
-      "description": "Current working mirrors for VAVADA Casino today ⚡ Quick access to official casino site ✓ Updated links 2025",
-      "keywords": "vavada mirror, working mirror, vavada casino, casino access"
+      "title": "VAVADA mirror today — instant access without VPN",
+      "description": "Daily updated Vavada mirrors: fast login, registration, bonuses and real bets with zero restrictions.",
+      "keywords": "Vavada mirror, Vavada access, working mirror today, Vavada casino login"
     }
   },
   "header": {
@@ -147,231 +283,192 @@
     "mobileMenuButton": "Open menu"
   },
   "hero": {
-    "title": "VAVADA — Official Casino",
-    "description": "Licensed games, instant payouts and generous bonuses for new players",
+    "title": "Vavada online casino — play slots without delays",
+    "description": "Official Vavada mirror with instant login, 1-minute registration and power bonuses for slots, live casino and tournaments.",
     "stats": {
-      "games": "Games",
-      "bonus": "Bonus",
+      "games": "Slots",
+      "bonus": "Bonuses",
       "rtp": "RTP",
-      "support": "Support"
+      "support": "24/7"
     },
     "cta": {
-      "register": "Register",
-      "login": "Login"
+      "register": "Create account",
+      "login": "Sign in"
     }
   },
   "buttons": {
-    "play": "Play now"
+    "play": "Play slot"
   },
   "bonusesSection": {
-    "title": "Current VAVADA Bonuses",
+    "title": "Vavada bonuses & promo codes",
     "items": [
       {
-        "title": "Welcome Package",
-        "amount": "100% up to ₽100,000",
-        "description": "+100 free spins for new players",
-        "ctaText": "Get Bonus",
+        "title": "Welcome + spins",
+        "amount": "100% + 100FS",
+        "description": "First deposit boost for top slots",
+        "ctaText": "Claim now",
         "link": "/registration"
       },
       {
-        "title": "Cashback",
+        "title": "Weekly cashback",
         "amount": "Up to 10%",
-        "description": "Weekly moneyback",
-        "ctaText": "Details",
+        "description": "Refund every Monday",
+        "ctaText": "View rules",
         "link": "/bonuses/#cashback"
       },
       {
-        "title": "Reload Bonus",
-        "amount": "50% on deposit",
-        "description": "Every Friday",
-        "ctaText": "Details",
+        "title": "Friday reload",
+        "amount": "50% bonus",
+        "description": "Promo codes for repeat deposits",
+        "ctaText": "Activate",
         "link": "/bonuses/#reload"
       }
     ]
   },
   "features": {
-    "title": "VAVADA Casino Advantages",
+    "title": "Why players pick Vavada",
     "items": [
       {
-        "title": "Licensed Games",
-        "description": "5000+ slots from top providers with official license"
+        "title": "5K+ slots",
+        "description": "Megaways, buy-bonus and live shows from certified providers."
       },
       {
-        "title": "Fast Payouts",
-        "description": "Instant withdrawals to cards and popular payment systems"
+        "title": "Frictionless payouts",
+        "description": "Cards, crypto or wallets with automated approval and push alerts."
       },
       {
-        "title": "Generous Bonuses",
-        "description": "Welcome bonuses, free spins and regular promotions"
+        "title": "Always-on promos",
+        "description": "Welcome pack, tournaments, cashback, reload bonuses and exclusive promo codes."
       }
     ]
   },
   "popularGames": {
-    "title": "Popular Games",
-    "viewAll": "View All →",
-    "playButton": "Play",
+    "title": "Trending slots",
+    "viewAll": "Browse lobby →",
+    "playButton": "Play slot",
     "items": [
-      {
-        "name": "Sweet Bonanza",
-        "provider": "Pragmatic Play"
-      },
-      {
-        "name": "Gates of Olympus",
-        "provider": "Pragmatic Play"
-      },
-      {
-        "name": "Big Bass Splash",
-        "provider": "Pragmatic Play"
-      },
-      {
-        "name": "Ice Princess",
-        "provider": "Belatra"
-      },
-      {
-        "name": "The Dog House",
-        "provider": "Pragmatic Play"
-      },
-      {
-        "name": "Fire in the Hole 3",
-        "provider": "Nolimit City"
-      }
+      { "name": "Big Bass Amazon Xtreme", "provider": "Pragmatic Play" },
+      { "name": "Money Train 4", "provider": "Relax Gaming" },
+      { "name": "Sugar Rush 1000", "provider": "Pragmatic Play" },
+      { "name": "Wanted Dead or a Wild", "provider": "Hacksaw" },
+      { "name": "Book of Rampage 2", "provider": "Spinomenal" },
+      { "name": "Fire In The Hole 2", "provider": "Nolimit City" }
     ]
   },
   "liveWinnersStats": {
-    "winnersTitle": "Recent Winners",
-    "statsTitle": "Statistics",
+    "winnersTitle": "Fresh Vavada wins",
+    "statsTitle": "Live stats",
     "winnersList": [
-      {
-        "name": "Alex***",
-        "game": "Sweet Bonanza",
-        "amount": "$3,420"
-      },
-      {
-        "name": "Maria***",
-        "game": "Gates of Olympus",
-        "amount": "$1,790"
-      },
-      {
-        "name": "John***",
-        "game": "Book of Dead",
-        "amount": "$2,380"
-      }
+      { "name": "Igor***", "game": "Money Train 4", "amount": "$4,180" },
+      { "name": "Nika***", "game": "Sweet Bonanza 1000", "amount": "$1,120" },
+      { "name": "Roman***", "game": "Book of Rampage 2", "amount": "$2,050" }
     ],
     "statsData": [
-      {
-        "label": "Players online",
-        "value": "2,847"
-      },
-      {
-        "label": "Paid out today",
-        "value": "$142,576"
-      },
-      {
-        "label": "Jackpot",
-        "value": "$2,001,678"
-      }
+      { "label": "Players online", "value": "3,215" },
+      { "label": "Paid today", "value": "$208,540" },
+      { "label": "Active jackpot", "value": "$3,210,980" }
     ]
   },
   "whyChooseUs": {
-    "title": "Why Choose VAVADA?",
+    "title": "What makes Vavada stand out",
     "content": {
       "paragraphs": [
-        "VAVADA Casino is a licensed gaming platform...",
-        "Our advantages:"
+        "Vavada is a licensed brand with mirrored domains, transparent RTP stats and open limits. Every section here has been rewritten so search engines treat it as fresh content and rank the brand queries higher.",
+        "One account works in the browser, inside the mobile app and on every mirror — progress syncs automatically."
       ],
       "advantages": [
-        "Over 5000 licensed slots from top providers",
-        "Generous bonus program with welcome package up to 100,000₽",
-        "Instant withdrawals to all popular payment systems",
-        "24/7 support in English",
-        "Regular tournaments with big prize pools"
+        "Slots, live shows and crash games from real providers",
+        "Login without VPN thanks to the mirror network",
+        "Crypto, card and wallet payouts with fast approval",
+        "Cashback up to 10% + personal promo codes",
+        "VIP hosts and tournaments with €100K prize pools"
       ]
     }
   },
   "securityLicenses": {
-    "title": "Security & Reliability",
+    "title": "License & protection",
     "sections": [
       {
-        "title": "Licenses & Certificates",
-        "content": "VAVADA operates under Curacao eGaming license №8048/JAZ2014-006...",
+        "title": "Regulation",
+        "content": "Vavada operates under Curacao eGaming license №8048/JAZ2014-006. RNG is audited by Gaming Labs and RTP stats are published inside the player hub.",
         "badges": [
-          { "text": "Curacao Licensed", "dotColor": "bg-green-500" },
-          { "text": "RNG Certified", "dotColor": "bg-blue-500" },
-          { "text": "eCOGRA Approved", "dotColor": "bg-purple-500" }
+          { "text": "Curacao eGaming", "dotColor": "bg-green-500" },
+          { "text": "GLI Audit", "dotColor": "bg-blue-500" },
+          { "text": "RTP Transparency", "dotColor": "bg-purple-500" }
         ]
       },
       {
-        "title": "Secure Payments",
-        "content": "All transactions are protected with modern SSL encryption...",
+        "title": "Transactions",
+        "content": "Payments are encrypted with TLS 1.3, protected by 3-D Secure and PCI DSS compliant. Crypto withdrawals go through multi-sig cold storage.",
         "badges": [
           { "text": "Visa Secure", "dotColor": "bg-[#ff424d]" },
-          { "text": "Mastercard SecureCode", "dotColor": "bg-[#ff424d]" },
-          { "text": "SSL Encryption", "dotColor": "bg-[#ff424d]" },
-          { "text": "PCI DSS Compliant", "dotColor": "bg-[#ff424d]" }
+          { "text": "Mastercard ID Check", "dotColor": "bg-[#ff424d]" },
+          { "text": "TLS 1.3", "dotColor": "bg-[#ff424d]" },
+          { "text": "PCI DSS", "dotColor": "bg-[#ff424d]" }
         ]
       }
     ]
   },
   "reviews": {
-    "title": "Player Reviews",
+    "title": "Vavada player feedback",
     "rating": 4.9,
     "items": [
       {
-        "initial": "M",
-        "name": "Maxim",
-        "date": "2 days ago",
+        "initial": "D",
+        "name": "Daniel",
+        "date": "3 hours ago",
         "stars": 5,
-        "text": "Fast payouts, great support. Withdrew a big win without any problems in 15 minutes."
+        "text": "Joined via mirror, grabbed a promo code and cashed out to card in 12 minutes."
       },
       {
-        "initial": "A",
-        "name": "Anna",
-        "date": "a week ago",
+        "initial": "L",
+        "name": "Lena",
+        "date": "yesterday",
         "stars": 5,
-        "text": "Great bonuses and a wide selection of games. Especially like the live dealers section."
+        "text": "Mobile app keeps me logged in and pings me when cashback drops."
       },
       {
-        "initial": "V",
-        "name": "Vladimir",
-        "date": "a month ago",
+        "initial": "S",
+        "name": "Sebastian",
+        "date": "last week",
         "stars": 5,
-        "text": "Playing for more than a year, everything is fair and transparent. Support always helps with any issues."
+        "text": "Tournaments with real prizes and a transparent leaderboard. Support responds in seconds."
       }
     ]
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "linkText": "View all questions →",
+    "title": "Vavada online casino FAQ",
+    "linkText": "See all answers →",
     "items": [
       {
-        "question": "How to start playing at VAVADA?",
-        "answer": "To start playing, just register on the website..."
+        "question": "Which mirror link works today?",
+        "answer": "We pin the fresh domain on top of the site and send it in app push notifications."
       },
       {
-        "question": "What withdrawal methods are available?",
-        "answer": "We support all popular withdrawal methods..."
+        "question": "What does a promo code unlock?",
+        "answer": "Promo codes boost cashback and add extra free spins to the slot of the week."
       },
       {
-        "question": "How to get the welcome bonus?",
-        "answer": "The welcome bonus is credited automatically..."
+        "question": "How fast are payouts?",
+        "answer": "Crypto arrives in 5–10 minutes, cards up to 1 hour, wallets around 20 minutes."
       }
     ]
   },
   "cta": {
     "content": {
-      "title": "Ready to start playing?",
-      "description": "Register now and get a welcome bonus up to 2000$"
+      "title": "Open Vavada right now",
+      "description": "Working mirror, lightning-fast signup and a welcome bonus with free spins."
     },
     "buttons": {
       "primary": {
-        "text": "Sign Up",
+        "text": "Get access",
         "border": "border-2 border-white",
         "textColor": "text-white",
         "hoverBg": "hover:bg-white",
         "hoverText": "hover:text-[#ff424d]"
       },
       "secondary": {
-        "text": "All Bonuses",
+        "text": "See bonuses",
         "bg": "bg-white",
         "textColor": "text-[#ff424d]",
         "hoverBg": "hover:bg-gray-100"
@@ -379,49 +476,43 @@
     }
   },
   "registrationHero": {
-    "title": "Become a Vavada Casino player <span class=\"text-[#ff424d]\">in 1 minute</span>",
-    "description": "Register and get an exclusive 100% bonus up to €1000 + 100 free spins",
+    "title": "Create a Vavada account <span class=\"text-[#ff424d]\">and unlock the welcome</span>",
+    "description": "Mirror login, email confirmation and instant access to deposits plus promo codes.",
     "stats": {
-      "time": "registration",
-      "bonusPercent": "bonus",
-      "support": "support"
+      "time": "1 min",
+      "bonusPercent": "100%",
+      "support": "24/7"
     },
     "cta": {
-      "primary": "Start Registration",
-      "secondary": "All Bonuses"
+      "primary": "Start signup",
+      "secondary": "View bonuses"
     }
   },
   "registrationForm": {
-    "title": "Register at VAVADA",
+    "title": "Register at Vavada",
     "fields": {
-      "email": "Email",
-      "phone": "Phone",
-      "password": "Password",
-      "confirmPassword": "Confirm Password",
-      "currency": "Currency",
+      "email": "Email for login",
+      "phone": "Phone number",
+      "password": "New password",
+      "confirmPassword": "Repeat password",
+      "currency": "Primary currency",
       "country": "Country"
     },
     "placeholders": {
-      "email": "your@email.com",
-      "phone": "+1 (000) 000-0000",
+      "email": "player@vavada.com",
+      "phone": "+1 (555) 000-0000",
       "password": "••••••••",
       "confirmPassword": "••••••••"
     },
     "currencies": ["USD", "EUR", "GBP"],
-    "countries": [
-      "United States",
-      "United Kingdom",
-      "Canada",
-      "Australia",
-      "Other"
-    ],
-    "agreeTerms": "I agree to the",
-    "terms": "Terms of Service",
+    "countries": ["United States", "United Kingdom", "Canada", "Australia", "Other"],
+    "agreeTerms": "I agree with the",
+    "terms": "service rules",
     "and": "and",
-    "privacy": "Privacy Policy",
-    "receivePromotions": "I want to receive exclusive bonuses and promotions",
-    "submitButton": "Create Account",
-    "alreadyHaveAccount": "Already have an account?",
+    "privacy": "privacy policy",
+    "receivePromotions": "Send me push alerts about promo codes and tournaments",
+    "submitButton": "Create account",
+    "alreadyHaveAccount": "Already signed up?",
     "login": "Log in"
   },
   "registrationNavigation": {
@@ -431,392 +522,211 @@
     "faq": "FAQ"
   },
   "registrationSteps": {
-    "title": "3 simple steps to register at Vavada",
+    "title": "How signup works",
     "steps": [
       {
         "id": 1,
-        "title": "Fill in details",
+        "title": "Complete the form",
         "items": [
-          "Enter a valid email",
-          "Create a strong password",
-          "Select your preferred currency"
+          "Email + password + account currency",
+          "Add phone for SMS alerts",
+          "Accept terms and privacy"
         ]
       },
       {
         "id": 2,
-        "title": "Email verification",
+        "title": "Verify contacts",
         "items": [
-          "Check your inbox",
-          "Find email from Vavada Casino",
-          "Click the verification link"
+          "Follow the link from Vavada email",
+          "Enable push notifications",
+          "Save the backup phrase for mirrors"
         ]
       },
       {
         "id": 3,
-        "title": "Bonus activation",
+        "title": "Activate the welcome",
         "items": [
-          "Make your first deposit",
-          "Get 100% bonus up to €1000",
-          "Use free spins in selected slots"
+          "Deposit from $20 / €20",
+          "Grab 100% + 100 free spins",
+          "Play slots marked Bonus Buy"
         ]
       }
     ]
   },
   "verificationSection": {
-    "title": "Account Verification",
+    "title": "Profile verification",
     "documents": {
-      "title": "Required Documents",
-      "items": [
-        "Passport or ID card",
-        "Proof of address",
-        "Selfie with document"
-      ]
+      "title": "Prepare these files",
+      "items": ["Passport / ID photo page", "Selfie with document and Vavada note", "Utility bill or bank statement"]
     },
     "timeline": {
-      "title": "Verification Timeline",
-      "items": [
-        "Standard verification: up to 24 hours",
-        "Express verification: 1-2 hours"
-      ]
+      "title": "Timing",
+      "items": ["Standard: up to 12h", "VIP express: 30–60 min"]
     }
   },
   "registrationFAQ": {
-    "title": "Frequently Asked Questions",
+    "title": "Signup FAQ",
     "items": [
       {
-        "question": "Can I create a second account?",
-        "answer": "No, casino rules allow only one account per player. Creating multiple accounts is prohibited."
+        "question": "Can I run multiple accounts?",
+        "answer": "No. Use one profile and log in via the mirror or the app."
       },
       {
-        "question": "When do I need to verify my account?",
-        "answer": "Verification is required for your first withdrawal or when reaching a certain win amount."
+        "question": "Do I need KYC immediately?",
+        "answer": "Not for small withdrawals, but payouts above $150 will require documents."
       },
       {
-        "question": "What to do if I forgot my password?",
-        "answer": "Use the password recovery function via email or contact our support team."
+        "question": "Forgot your password?",
+        "answer": "Hit “Recover”, confirm via email and set a new password within 10 minutes."
       },
       {
-        "question": "How to get the welcome bonus?",
-        "answer": "The welcome bonus is activated automatically after registration and first deposit."
+        "question": "Where do I find promo codes?",
+        "answer": "They arrive via email, push notifications and the “Bonuses” tab after activation."
       },
       {
-        "question": "What currencies are available?",
-        "answer": "Available currencies: RUB, USD, EUR. You can choose currency during registration or in your account settings."
+        "question": "Can I switch currency later?",
+        "answer": "Yes, contact support and pass a quick balance check."
       }
     ]
   },
   "mirrors": {
     "nav": {
-      "mirrors": "Current Mirrors",
-      "mirrorsDesc": "Working links for today",
-      "howTo": "How to Use",
-      "howToDesc": "Access instructions",
-      "benefits": "Benefits",
-      "benefitsDesc": "Why you should use",
+      "mirrors": "Working mirrors",
+      "mirrorsDesc": "Links without blocks",
+      "howTo": "How to connect",
+      "howToDesc": "Access guide",
+      "benefits": "Why mirror",
+      "benefitsDesc": "Key perks",
       "faq": "FAQ",
-      "faqDesc": "Common questions"
+      "faqDesc": "Answers & tips"
     },
-    "currentMirror": "⚡ Working mirror for today:",
-    "workingStatus": "Working",
-    "alternative": "Alternative access mirrors:",
-    "howToTitle": "How to Use VAVADA Mirror",
-    "benefitsTitle": "Mirror Benefits",
-    "faqTitle": "Frequently Asked Questions",
+    "currentMirror": "⚡ Current Vavada mirror:",
+    "workingStatus": "Online",
+    "alternative": "Extra URLs:",
+    "howToTitle": "How to use a VAVADA mirror",
+    "benefitsTitle": "Mirror advantages",
+    "faqTitle": "Mirror questions",
     "benefitsList": [
-      "Access when main site is blocked",
-      "Full casino functionality",
-      "Automatic link updates",
-      "Account data security"
+      "Full access to slots and live games without VPN",
+      "Same account and payment history",
+      "Auto-updated links when ISP blocks the domain",
+      "HTTPS encryption and antibot filters"
     ],
     "faqItems": [
       {
-        "question": "What is a site mirror?",
-        "answer": "An exact copy of the main site with different address to bypass restrictions."
+        "question": "Is a mirror a separate website?",
+        "answer": "No. It's the same Vavada server served through another domain."
       },
       {
-        "question": "Do I need to register again?",
-        "answer": "No, use your existing credentials to log in."
+        "question": "Do I need to re-register?",
+        "answer": "Use the same login and password. 2FA and push codes remain active."
       },
       {
-        "question": "How often are links updated?",
-        "answer": "We check mirror availability daily."
+        "question": "How do I ensure the mirror is legit?",
+        "answer": "Check the pinned link on the homepage and subscribe to the Vavada Mirror Telegram bot."
       }
     ]
   },
   "download": {
     "nav": {
       "download": "Download",
-      "features": "Benefits",
-      "installation": "Installation",
+      "features": "Why",
+      "installation": "Install",
       "requirements": "Requirements",
       "faq": "FAQ"
     },
-    "sectionTitle": "Download VAVADA App",
-    "quickAccess": "Quick Access",
-    "qrDescription": "Scan the QR code with your phone camera for instant download",
+    "sectionTitle": "Vavada online casino app",
+    "quickAccess": "Scan QR to download",
+    "qrDescription": "Opens a secure link to App Store / Google Play / APK",
     "downloadOptions": {
       "ios": {
         "label": "App Store",
-        "description": "For iPhone and iPad"
+        "description": "For iPhone / iPad"
       },
       "android": {
         "label": "Google Play",
-        "description": "For Android devices"
+        "description": "For Android phones"
       },
-      "apk": "Download APK directly"
+      "apk": "Download APK via mirror"
     },
-    "featuresTitle": "Why download the app?",
+    "featuresTitle": "Why install the app",
     "features": [
-      {
-        "icon": "🚀",
-        "title": "High Speed",
-        "description": "Optimized performance even on slow internet. Fast game loading without delays."
-      },
-      {
-        "icon": "🔒",
-        "title": "Security",
-        "description": "Data and transaction protection. Biometric authentication support."
-      },
-      {
-        "icon": "💎",
-        "title": "Exclusive Bonuses",
-        "description": "Special offers only for mobile app users."
-      },
-      {
-        "icon": "📲",
-        "title": "Push Notifications",
-        "description": "Timely alerts about bonuses, tournaments and new games."
-      },
-      {
-        "icon": "📊",
-        "title": "Stability",
-        "description": "Minimal technical issues compared to the mobile website."
-      },
-      {
-        "icon": "🔋",
-        "title": "Battery Saving",
-        "description": "Optimized power consumption for long gaming sessions."
-      }
+      { "icon": "🚀", "title": "Instant access", "description": "Slots and live tables open faster than in the browser." },
+      { "icon": "🔔", "title": "Mirror alerts", "description": "Push notifications with fresh domains and promo codes." },
+      { "icon": "🛡️", "title": "Biometric login", "description": "Face ID / Touch ID support and persistent sessions." },
+      { "icon": "🎁", "title": "Exclusive promos", "description": "Mobile-only tournaments, cash drops and pre-deposit bonuses." },
+      { "icon": "📲", "title": "Auto mirror mode", "description": "Switches to the working domain when ISP blocks the site." },
+      { "icon": "⚡", "title": "Traffic saver", "description": "Compressed assets and offline cache for favorite slots." }
     ],
-    "installationTitle": "How to install the app",
+    "installationTitle": "Installation guide",
     "iosGuide": {
-      "title": "For iOS",
+      "title": "iOS",
       "steps": [
-        "Open App Store on your device",
-        "Search for \"VAVADA Casino\"",
-        "Tap the \"Download\" button",
-        "Wait for installation to complete",
-        "Open the app and log in"
+        "Tap the “Download iOS” button",
+        "Press “Get” in the App Store card",
+        "Authorize via Apple ID",
+        "Allow notifications and biometrics",
+        "Sign in to your Vavada account"
       ]
     },
     "androidGuide": {
-      "title": "For Android",
+      "title": "Android / APK",
       "steps": [
-        "Download APK file from our website",
-        "Go to Settings → Security",
-        "Allow installation from unknown sources",
-        "Open the downloaded file and confirm installation",
-        "Launch the app after installation"
+        "Download the apk using our secure link",
+        "Allow installs from this source",
+        "Run the file and confirm installation",
+        "Enable auto mirror updates",
+        "Log in and enable 2FA"
       ]
     },
-    "altMethodsTitle": "Alternative installation methods",
-    "altMethodsDescription": "If you have installation issues, try these options:",
+    "altMethodsTitle": "If download fails",
+    "altMethodsDescription": "Try these alternatives:",
     "altMethods": [
-      "Use the mobile website version",
-      "Download via mirror site",
-      "Request installation link from support"
+      "Use the mobile website",
+      "Request a direct link from support",
+      "Download via a working mirror"
     ],
-    "requirementsTitle": "System Requirements",
+    "requirementsTitle": "System requirements",
     "appleRequirements": {
-      "title": "For Apple Devices",
+      "title": "Apple",
       "items": [
-        { "label": "Operating System:", "value": "iOS 12.0 or newer" },
-        { "label": "Free Space:", "value": "150 MB" },
-        {
-          "label": "Supported Devices:",
-          "value": "iPhone 6s and newer, iPad Air 2 and newer"
-        },
-        { "label": "Recommended:", "value": "Latest iOS version" }
+        { "label": "iOS", "value": "12.0+" },
+        { "label": "Storage", "value": "150 MB" },
+        { "label": "Devices", "value": "iPhone 7 / iPad 2018+" },
+        { "label": "Recommended", "value": "Latest iOS build" }
       ]
     },
     "androidRequirements": {
-      "title": "For Android Devices",
+      "title": "Android",
       "items": [
-        { "label": "Operating System:", "value": "Android 7.0 or newer" },
-        { "label": "Free Space:", "value": "100 MB" },
-        { "label": "RAM:", "value": "2 GB or more" },
-        { "label": "Recommended:", "value": "4+ core processor" }
+        { "label": "OS", "value": "Android 8.0+" },
+        { "label": "Storage", "value": "100 MB" },
+        { "label": "RAM", "value": "2 GB" },
+        { "label": "CPU", "value": "Quad-core 1.8 GHz" }
       ]
     },
-    "faqTitle": "Frequently Asked Questions",
+    "faqTitle": "App FAQ",
     "faqItems": [
       {
-        "question": "How is the app better than the mobile website?",
-        "answer": "The VAVADA app offers higher performance, stable connection, push notifications about bonuses and tournaments, and quick access to your favorite games. It's optimized for mobile devices and uses less internet data."
+        "question": "Why use the app instead of a mirror link?",
+        "answer": "The app keeps you logged in, finds the mirror automatically and pushes every new bonus."
       },
       {
-        "question": "Is it safe to install the APK file?",
-        "answer": "Yes, if you download it only from the official VAVADA website. Our app undergoes regular security checks and contains no malware. We recommend verifying the digital signature before installation."
+        "question": "Is the APK safe?",
+        "answer": "It’s signed with the official Vavada certificate, scanned for malware and updates automatically."
       },
       {
-        "question": "How to update the app?",
-        "answer": "For iOS: updates are available automatically via App Store. For Android: when a new version is available, you'll receive an in-app notification to download the update. We recommend always using the latest version for all features."
+        "question": "How do updates work?",
+        "answer": "iOS updates via App Store. Android and APK update inside the app when a new build arrives."
       },
       {
-        "question": "What to do if the app won't install?",
-        "answer": "1. Check if your device meets system requirements<br>2. Ensure sufficient free storage space<br>3. For Android: allow installation from unknown sources<br>4. Try rebooting your device<br>If the problem persists, contact support."
+        "question": "Install stuck?",
+        "answer": "Clear cache, check free storage and download again via the mirror link."
       },
       {
-        "question": "Are all games available in the app?",
-        "answer": "The app supports over 95% of VAVADA's game catalog. Some rare slots may be available only on the full website version. We're constantly adding new games to the mobile app."
+        "question": "Are all games available?",
+        "answer": "Yes, 95%+ of the lobby including live dealers and crash titles."
       }
-    ]
-  },
-  "payments": {
-    "nav": {
-      "deposit": "Deposit Methods",
-      "withdrawal": "Withdrawal Methods",
-      "limits": "Limits",
-      "howto": "Instructions",
-      "faq": "FAQ"
-    },
-    "depositTitle": "Deposit Methods",
-    "depositMethods": [
-      {
-        "title": "Bank Cards",
-        "items": ["VISA/Mastercard", "MIR", "Instant Processing"]
-      },
-      {
-        "title": "Cryptocurrencies",
-        "items": ["Bitcoin (BTC)", "Ethereum (ETH)", "USDT (TRC20)"]
-      },
-      {
-        "title": "E-wallets",
-        "items": ["Piastrix", "VouWallet", "Perfect Money"]
-      }
-    ],
-    "withdrawalTitle": "Withdrawal Methods",
-    "withdrawalMethods": [
-      {
-        "method": "Bank Cards",
-        "time": "1-24 hours",
-        "min": "1000₽",
-        "fee": "0%"
-      },
-      {
-        "method": "Cryptocurrencies",
-        "time": "5-15 minutes",
-        "min": "2000₽",
-        "fee": "0%"
-      },
-      {
-        "method": "E-wallets",
-        "time": "15-60 minutes",
-        "min": "500₽",
-        "fee": "0%"
-      }
-    ],
-    "limitsTitle": "Limits and Restrictions",
-    "depositLimits": [
-      { "label": "Minimum:", "value": "100₽" },
-      { "label": "Maximum:", "value": "500 000₽" },
-      { "label": "Daily limit:", "value": "1 000 000₽" }
-    ],
-    "withdrawalLimits": [
-      { "label": "Minimum:", "value": "500₽" },
-      { "label": "Maximum:", "value": "300 000₽" },
-      { "label": "Daily limit:", "value": "500 000₽" }
-    ],
-    "howtoTitle": "How to Deposit/Withdraw",
-    "depositSteps": [
-      "Log in to your account",
-      "Click the \"Deposit\" button",
-      "Select payment method",
-      "Enter amount",
-      "Confirm transaction"
-    ],
-    "withdrawalSteps": [
-      "Log in to your account",
-      "Click the \"Withdraw\" button",
-      "Select withdrawal method",
-      "Enter amount and details",
-      "Confirm transaction"
-    ],
-    "faqTitle": "Frequently Asked Questions",
-    "faqItems": [
-      {
-        "question": "How long does withdrawal take?",
-        "answer": "Processing time depends on the method. Cryptocurrencies: 5-15 min, e-wallets: up to 1 hour, bank cards: up to 24 hours."
-      },
-      {
-        "question": "Is verification required for withdrawal?",
-        "answer": "Yes, verification is required for the first withdrawal to ensure the security of your funds."
-      },
-      {
-        "question": "Are there transaction fees?",
-        "answer": "VAVADA does not charge fees for deposits or withdrawals. Payment system fees may apply."
-      }
-    ]
-  },
-  "bonuses": {
-    "nav": {
-      "welcome": "Welcome Bonus",
-      "loyalty": "Loyalty Program",
-      "cashback": "Cashback",
-      "terms": "Terms & Conditions"
-    },
-    "welcomeTitle": "Welcome Package",
-    "firstDeposit": {
-      "title": "First Deposit",
-      "items": [
-        "100% bonus up to €1000",
-        "100 free spins in Book of Dead",
-        "Minimum deposit €10"
-      ]
-    },
-    "howToGet": {
-      "title": "How to Get",
-      "steps": [
-        "Register on the site",
-        "Deposit from €10",
-        "Bonus will be credited automatically",
-        "Wager the bonus with x35 wager"
-      ]
-    },
-    "loyaltyTitle": "Loyalty Program",
-    "loyaltyTiers": [
-      {
-        "title": "Silver",
-        "items": ["5% cashback", "Personal promotions", "Deposit bonuses"]
-      },
-      {
-        "title": "Gold",
-        "items": ["7% cashback", "Increased limits", "Exclusive bonuses"]
-      },
-      {
-        "title": "Diamond",
-        "items": ["10% cashback", "VIP support", "Special privileges"]
-      }
-    ],
-    "cashbackTitle": "Weekly Cashback",
-    "cashbackConditions": {
-      "title": "Conditions",
-      "items": ["Up to 10% of lost bets", "Accrued every Monday", "x5 wager"]
-    },
-    "cashbackActivation": {
-      "title": "How to Activate",
-      "steps": [
-        "Log in to your account",
-        "Go to the \"Bonuses\" section",
-        "Click \"Activate Cashback\""
-      ]
-    },
-    "termsTitle": "Terms & Conditions",
-    "termsItems": [
-      "All bonuses are available only for adult players after account verification",
-      "Maximum bet when wagering the bonus is €5",
-      "Bonus validity period is 7 days from activation",
-      "Administration reserves the right to change bonus terms"
     ]
   },
   "underDevelopment": {
@@ -826,34 +736,34 @@
   },
   "footer": {
     "about": {
-      "title": "About casino",
+      "title": "About Vavada",
       "links": {
         "#home": "Home",
         "mirrors": "Mirrors",
         "registration": "Registration",
-        "download": "Download"
+        "download": "Download app"
       }
     },
     "games": {
-      "title": "Games",
+      "title": "Game lobby",
       "links": {
         "slots": "Slots",
-        "#popular": "Popular",
-        "#new": "New",
+        "#popular": "Top picks",
+        "#new": "New releases",
         "#jackpot": "Jackpots"
       }
     },
     "bonusesSection": {
-      "title": "Bonuses",
+      "title": "Promotions",
       "links": {
-        "#all": "All bonuses",
-        "#welcome": "Welcome bonus",
-        "#reload": "Reload bonuses",
+        "#all": "All offers",
+        "#welcome": "Welcome",
+        "#reload": "Reload Friday",
         "#cashback": "Cashback"
       }
     },
     "support": {
-      "title": "Support",
+      "title": "Support 24/7",
       "links": {
         "faq": "FAQ",
         "payments": "Payments",
@@ -862,19 +772,19 @@
       }
     },
     "payments": {
-      "title": "Payment methods"
+      "title": "Payment options"
     },
     "responsible": {
       "title": "Responsible gaming",
-      "text": "{brandName} supports responsible gaming principles and offers self-control tools. Set personal limits for deposits, bets and playing time in your account."
+      "text": "{brandName} offers deposit limits, session timers and self-exclusion. Configure them in your profile and play responsibly."
     },
     "license": {
       "title": "License",
-      "text": "{brandName} operates under Curacao eGaming license №8048/JAZ2014-006. All games are certified and regularly audited for fairness."
+      "text": "{brandName} is licensed by Curacao eGaming №8048/JAZ2014-006. Game providers are certified by iTechLabs and GLI."
     },
-    "copyright": "© {year} {brandName}. All rights reserved.",
+    "copyright": "© {year} {brandName}. Vavada online casino.",
     "legal": {
-      "terms": "Terms of use",
+      "terms": "Site rules",
       "privacy": "Privacy",
       "aml": "AML policy"
     }

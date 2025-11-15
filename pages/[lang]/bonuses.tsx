@@ -76,54 +76,62 @@ export default function BonusesPage({
   );
 
   const defaultMeta = {
-    title: lang === "ru" 
-      ? "Бонусы VAVADA | Приветственный пакет и кэшбэк" 
-      : "VAVADA Bonuses | Welcome Package & Cashback",
-    
-    description: lang === "ru" 
-      ? "Эксклюзивные бонусы и акции казино VAVADA. Приветственный пакет 100% до 100 000₽ + фриспины, кэшбэк и программа лояльности." 
-      : "Exclusive casino bonuses at VAVADA. 100% welcome bonus up to €1000 + free spins, cashback and loyalty program.",
-    
-    keywords: translations.meta?.home?.keywords || 
-             (lang === "ru" 
-               ? "бонусы vavada, приветственный бонус, фриспины, кэшбэк" 
-               : "vavada bonuses, welcome bonus, free spins, cashback"),
-    
+    title:
+      lang === "ru"
+        ? "Бонусы VAVADA 2025 — приветственный пакет, кэшбэк и промокоды"
+        : "VAVADA bonuses 2025 — welcome bundle, cashback and promo codes",
+
+    description:
+      lang === "ru"
+        ? "Свежие акции Vavada: 100% бонус + фриспины, еженедельный кэшбэк, рейкбек и уровень лояльности. Рассказываем условия отыгрыша и лимиты."
+        : "Latest Vavada promos: 100% bonus + free spins, weekly cashback, rakeback and loyalty tiers. Full wagering rules and limits inside.",
+
+    keywords:
+      translations.meta?.home?.keywords ||
+      (lang === "ru"
+        ? "vavada бонусы, промокод vavada, кэшбэк vavada, акции vavada"
+        : "vavada bonuses, vavada promo code, vavada cashback, vavada promos"),
+
     canonical: `/${lang}/bonuses`,
-    
+
     og: {
-      title: lang === "ru" 
-        ? "Бонусы и акции VAVADA" 
-        : "VAVADA Bonuses & Promotions",
-      description: lang === "ru" 
-        ? "Самые выгодные бонусы для игроков казино VAVADA" 
-        : "The most profitable bonuses for VAVADA casino players",
+      title:
+        lang === "ru"
+          ? "Бонусы и акции VAVADA"
+          : "VAVADA Bonuses & Promotions",
+      description:
+        lang === "ru"
+          ? "Самые выгодные бонусы для игроков казино VAVADA"
+          : "The most profitable bonuses for VAVADA casino players",
       image: "/images/og/bonuses.jpg",
-      imageAlt: lang === "ru" 
-        ? "Бонусы VAVADA" 
-        : "VAVADA Bonuses"
+      imageAlt:
+        lang === "ru" ? "Бонусы VAVADA" : "VAVADA Bonuses"
     },
-    
+
     twitter: {
       card: "summary_large_image",
-      title: lang === "ru" 
-        ? "Бонусы и акции VAVADA" 
-        : "VAVADA Bonuses & Promotions",
-      description: lang === "ru" 
-        ? "Самые выгодные бонусы для игроков казино VAVADA" 
-        : "The most profitable bonuses for VAVADA casino players",
+      title:
+        lang === "ru"
+          ? "Бонусы и акции VAVADA"
+          : "VAVADA Bonuses & Promotions",
+      description:
+        lang === "ru"
+          ? "Самые выгодные бонусы для игроков казино VAVADA"
+          : "The most profitable bonuses for VAVADA casino players",
       image: "/images/twitter/bonuses.jpg"
     },
-    
+
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: lang === "ru" 
-        ? "Бонусы VAVADA Casino" 
-        : "VAVADA Casino Bonuses",
-      description: lang === "ru" 
-        ? "Эксклюзивные бонусы и акции для игроков" 
-        : "Exclusive bonuses and promotions for players"
+      name:
+        lang === "ru"
+          ? "Бонусы VAVADA Casino"
+          : "VAVADA Casino Bonuses",
+      description:
+        lang === "ru"
+          ? "Эксклюзивные бонусы и акции для игроков"
+          : "Exclusive bonuses and promotions for players"
     }
   };
 
@@ -166,13 +174,33 @@ export default function BonusesPage({
         
         <main className="container mx-auto px-4 py-8">
           <article className="prose prose-invert max-w-none">  
-            <nav className="bg-[#2a2a42] rounded-xl p-6 mb-8">
+            <nav className="bg-[#2a2a42] rounded-xl p-6 mb-8 border border-white/10">
               <ul className="flex flex-wrap gap-4">
                 {[
-                  { id: "welcome-bonus", text: translations.bonuses?.nav?.welcome || "Приветственный бонус" },
-                  { id: "loyalty", text: translations.bonuses?.nav?.loyalty || "Программа лояльности" },
-                  { id: "cashback", text: translations.bonuses?.nav?.cashback || "Кэшбэк" },
-                  { id: "terms", text: translations.bonuses?.nav?.terms || "Правила и условия" }
+                  {
+                    id: "welcome-bonus",
+                    text:
+                      translations.bonuses?.nav?.welcome ||
+                      (lang === "ru" ? "Приветственный бонус" : "Welcome bonus")
+                  },
+                  {
+                    id: "loyalty",
+                    text:
+                      translations.bonuses?.nav?.loyalty ||
+                      (lang === "ru" ? "Программа лояльности" : "Loyalty program")
+                  },
+                  {
+                    id: "cashback",
+                    text:
+                      translations.bonuses?.nav?.cashback ||
+                      (lang === "ru" ? "Кэшбэк и рейкбек" : "Cashback & rakeback")
+                  },
+                  {
+                    id: "terms",
+                    text:
+                      translations.bonuses?.nav?.terms ||
+                      (lang === "ru" ? "Правила отыгрыша" : "Wagering rules")
+                  }
                 ].map((item) => (
                   <li key={item.id}>
                     <a 
@@ -186,6 +214,35 @@ export default function BonusesPage({
               </ul>
             </nav>
             
+            <section className="bg-[#1c1c2d]/60 border border-white/5 rounded-3xl p-6 mb-10">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                {lang === "ru"
+                  ? "Каждый бонус Vavada привязан к уровню аккаунта: новичок получает двойной депозит и фриспины, а VIP — увеличенный кэшбэк и личные промокоды. Мы обновляем условия 1 раз в неделю, поэтому держите страницу в закладках."
+                  : "Every Vavada bonus depends on your tier: newcomers get a doubled deposit and spins, while VIP members enjoy boosted cashback and private promo codes. We refresh terms weekly, so keep this page bookmarked."}
+              </p>
+              <ul className="mt-4 grid gap-3 md:grid-cols-2 text-sm text-gray-200">
+                {[
+                  lang === "ru"
+                    ? "Отыгрыш приветствия — х35, на фриспины — х20."
+                    : "Welcome wagering x35, free spin wagering x20.",
+                  lang === "ru"
+                    ? "Кэшбэк начисляется по вторникам, автоматически падает на счёт без отыгрыша."
+                    : "Cashback drops every Tuesday with zero wagering.",
+                  lang === "ru"
+                    ? "Промокоды активируются в кассе на рабочем зеркале или в приложении."
+                    : "Promo codes activate in cashier on a live mirror or inside the app.",
+                  lang === "ru"
+                    ? "Лимиты бонусов зависят от валюты: до 100 000₽ / €1000."
+                    : "Bonus limits depend on currency: up to ₽100 000 / €1000.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#ff424d]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
             <HeroBonuses templateData={templateData} lang={lang} />
             <WelcomeBonus translations={translations} lang={lang} />
             <LoyaltyProgram translations={translations} lang={lang} />

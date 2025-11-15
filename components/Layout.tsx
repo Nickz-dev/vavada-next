@@ -32,33 +32,47 @@ interface PageMeta {
 
 export default function Layout({ children, meta = {} }: LayoutProps) {
   const router = useRouter();
-  
-  // Используем безопасный доступ к свойствам роутера
   const locale = router.locale || "ru";
   const asPath = router.asPath || "/";
-  
-  // Приводим тип локализации
+  const defaultLocale = router.defaultLocale || "ru";
+  const supportedLocales = ["ru", "en"];
+
   const translations = locale === "ru" ? ru : en;
-  
-  // Определяем ключ страницы на основе пути
-  const pathSegments = asPath.split('/').filter(Boolean);
-  const pathKey = pathSegments[0] || 'home';
-  
-  // Получаем мета-данные для конкретной страницы
-  const pageMeta = (translations.meta as Record<string, PageMeta>)[pathKey] || 
-                  (translations.meta as Record<string, PageMeta>).home;
-  
-  // Используем переданные meta, затем мета для страницы, затем дефолтные значения
-  const title = meta.title || pageMeta?.title || "Vavada Casino";
-  const description = meta.description || pageMeta?.description || "Официальный сайт казино Vavada";
-  const keywords = meta.keywords || pageMeta?.keywords || "казино, vavada, игровые автоматы, бонусы";
-  
-  const siteUrl = "https://vavada-0011.com";
-  const cleanPath = asPath.split('?')[0]; // Убираем query-параметры
-  
-  const canonicalUrl = meta.canonical 
+
+  const pathSegments = asPath.split("/").filter(Boolean);
+  const pathKey = pathSegments[0] || "home";
+
+  const pageMeta =
+    (translations.meta as Record<string, PageMeta>)[pathKey] ||
+    (translations.meta as Record<string, PageMeta>).home;
+
+  const title = meta.title || pageMeta?.title || "Vavada Online Casino";
+  const description =
+    meta.description ||
+    pageMeta?.description ||
+    "Vavada online casino — вход, регистрация, бонусы и рабочее зеркало на сегодня.";
+  const keywords =
+    meta.keywords ||
+    pageMeta?.keywords ||
+    "Vavada, VAVADA, Vavada online casino, вход Vavada, регистрация Vavada, зеркало Vavada, слоты Vavada, играть онлайн Vavada, рабочее зеркало сегодня, кэшбэк Vavada, промокоды Vavada";
+
+  const siteUrl = "https://vavada-0001.com";
+  const cleanPath = asPath.split("?")[0];
+
+  const localizedPath = cleanPath.replace(
+    new RegExp(`^/(?:${supportedLocales.join("|")})(?=/|$)`),
+    ""
+  );
+  const normalizedPath = localizedPath || "/";
+
+  const buildLocalizedUrl = (lang: string) => {
+    const localePrefix = lang === defaultLocale ? "" : `/${lang}`;
+    return `${siteUrl}${localePrefix}${normalizedPath}`;
+  };
+
+  const canonicalUrl = meta.canonical
     ? `${siteUrl}${meta.canonical}`
-    : `${siteUrl}${cleanPath}`;
+    : buildLocalizedUrl(locale);
 
   // Google Analytics
   useEffect(() => {
@@ -83,9 +97,9 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
         <meta name="keywords" content={keywords} />
         <link rel="canonical" href={canonicalUrl} />
         
-        <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${cleanPath}`} />
-        <link rel="alternate" hrefLang="ru" href={`${siteUrl}/ru`} />
-        <link rel="alternate" hrefLang="en" href={`${siteUrl}/en`} />
+        <link rel="alternate" hrefLang="x-default" href={buildLocalizedUrl(defaultLocale)} />
+        <link rel="alternate" hrefLang="ru" href={buildLocalizedUrl("ru")} />
+        <link rel="alternate" hrefLang="en" href={buildLocalizedUrl("en")} />
         
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />

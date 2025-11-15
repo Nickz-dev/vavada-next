@@ -11,16 +11,9 @@ const RegistrationFAQ: React.FC<RegistrationFAQProps> = ({
   templateData,
   lang,
 }) => {
-  // Получаем переводы
-  const ruTranslations = ru as any;
-  const enTranslations = en as any;
+  const locale = lang === "ru" ? (ru as any) : (en as any);
+  const t = locale.registrationFAQ || {};
 
-  const t =
-    lang === "ru"
-      ? ruTranslations.registrationFAQ || {}
-      : enTranslations.registrationFAQ || {};
-
-  // Значения по умолчанию
   const defaultFAQ = [
     {
       question:
@@ -54,21 +47,17 @@ const RegistrationFAQ: React.FC<RegistrationFAQProps> = ({
     },
   ];
 
-  // Стили по умолчанию
   const defaultStyles = {
-    section: "bg-[#2a2a42] rounded-xl p-8",
-    title: "text-2xl font-bold text-white mb-6",
-    item: "bg-[#1c1c2d] rounded-xl p-6 mb-4 last:mb-0",
-    question: "text-xl font-semibold text-white mb-3",
-    answer: "text-gray-300",
+    section: "bg-[#15152a] rounded-3xl p-6 md:p-10 border border-white/5",
+    title: "text-2xl md:text-3xl font-bold text-white mb-6",
+    item: "bg-[#1c1c2d] rounded-2xl border border-white/5 p-6",
+    question: "text-lg font-semibold text-white",
+    answer: "text-gray-300 text-sm mt-3",
   };
 
-  // Стили из шаблона или по умолчанию
   const styles = templateData?.registrationFAQ?.styles || defaultStyles;
-  const faqItems =
-    templateData?.registrationFAQ?.items || t.items || defaultFAQ;
+  const faqItems = templateData?.registrationFAQ?.items || t.items || defaultFAQ;
 
-  // Состояние для отслеживания открытых вопросов
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
@@ -77,31 +66,26 @@ const RegistrationFAQ: React.FC<RegistrationFAQProps> = ({
 
   return (
     <section id="faq" className={styles.section}>
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-6">
+      <div className="max-w-4xl mx-auto space-y-4">
         <h2 className={styles.title}>
           {t.title ||
             (lang === "ru"
               ? "Часто задаваемые вопросы"
               : "Frequently Asked Questions")}
         </h2>
-
         <div className="space-y-4">
           {faqItems.map((item: any, index: number) => (
             <div
               key={index}
-              className={`${
-                styles.item
-              } cursor-pointer transition-all duration-300 ${
-                openIndex === index
-                  ? "ring-2 ring-[#ff424d]"
-                  : "hover:ring-1 hover:ring-[#ff424d]/50"
+              className={`${styles.item} cursor-pointer transition-all duration-300 ${
+                openIndex === index ? "ring-2 ring-[#ff424d]" : "hover:ring-1 hover:ring-[#ff424d]/50"
               }`}
               onClick={() => toggleItem(index)}
             >
               <div className="flex justify-between items-start">
                 <h3 className={styles.question}>{item.question}</h3>
                 <svg
-                  className={`w-6 h-6 text-[#ff424d] transition-transform duration-300 ${
+                  className={`w-5 h-5 text-[#ff424d] transition-transform ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -112,16 +96,13 @@ const RegistrationFAQ: React.FC<RegistrationFAQProps> = ({
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d={openIndex === index ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                    d="M9 5l7 7-7 7"
                   />
                 </svg>
               </div>
-
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index
-                    ? "max-h-96 opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
+                  openIndex === index ? "max-h-96 opacity-100 mt-3" : "max-h-0 opacity-0"
                 }`}
               >
                 <p className={styles.answer}>{item.answer}</p>

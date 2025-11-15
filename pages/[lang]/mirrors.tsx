@@ -78,17 +78,17 @@ export default function MirrorsPage({
   const mirrorsMeta = translations.meta?.mirrors || {
     title:
       lang === "ru"
-        ? "Рабочее зеркало VAVADA на сегодня 2025 - Актуальные ссылки"
-        : "VAVADA Working Mirror Today 2025 - Current Links",
+        ? "Рабочее зеркало VAVADA 2025 — вход без VPN и актуальные ссылки"
+        : "VAVADA mirror 2025 — VPN-free login and fresh links",
     description:
       lang === "ru"
-        ? "Актуальные рабочие зеркала VAVADA Casino на сегодня ⚡ Быстрый доступ к официальному сайту казино ✓ Обновляемые ссылки 2025"
-        : "Current working mirrors for VAVADA Casino today ⚡ Quick access to official casino site ✓ Updated links 2025",
+        ? "Собрали живые зеркала Vavada, автоматическое обновление доменов, инструкция по обходу блокировок и советы по мобильному входу."
+        : "Live Vavada mirrors with automatic domain rotation, block-bypass guide, and mobile login tips.",
     keywords:
       translations.meta?.home?.keywords ||
       (lang === "ru"
-        ? "зеркало vavada, рабочее зеркало, vavada casino, доступ к казино"
-        : "vavada mirror, working mirror, vavada casino, casino access"),
+        ? "vavada зеркало, рабочее зеркало vavada, вход vavada, доступ vavada casino"
+        : "vavada mirror, working vavada mirror, vavada login, vavada access"),
     canonical: `/${lang}/mirrors`,
   };
 
@@ -142,7 +142,7 @@ export default function MirrorsPage({
                   : "Working VAVADA Mirror Today 2025"}
               </h2>
 
-              <nav className="bg-[#2a2a42] rounded-xl p-6 mb-8">
+              <nav className="bg-[#2a2a42] rounded-xl p-6 mb-8 border border-white/10">
                 <h2 className="sr-only">
                   {lang === "ru" ? "Навигация по странице" : "Page navigation"}
                 </h2>
@@ -150,31 +150,39 @@ export default function MirrorsPage({
                   {[
                     {
                       id: "mirrors",
-                      icon: "🔗",
+                      icon: "🛰️",
                       title:
                         translations.mirrors?.nav?.mirrors ||
-                        "Актуальные зеркала",
+                        (lang === "ru" ? "Каталог зеркал" : "Mirror catalog"),
                       desc:
                         translations.mirrors?.nav?.mirrorsDesc ||
-                        "Рабочие ссылки на сегодня",
+                        (lang === "ru"
+                          ? "Живые домены и резервные URL"
+                          : "Live domains and backup URLs"),
                     },
                     {
                       id: "how-to-use",
-                      icon: "📱",
+                      icon: "🧭",
                       title:
-                        translations.mirrors?.nav?.howTo || "Как использовать",
+                        translations.mirrors?.nav?.howTo ||
+                        (lang === "ru" ? "Гид по обходу" : "Bypass guide"),
                       desc:
                         translations.mirrors?.nav?.howToDesc ||
-                        "Инструкция по входу",
+                        (lang === "ru"
+                          ? "Пошаговая инструкция входа без VPN"
+                          : "Step-by-step VPN-free login"),
                     },
                     {
                       id: "benefits",
-                      icon: "⭐",
+                      icon: "⚡",
                       title:
-                        translations.mirrors?.nav?.benefits || "Преимущества",
+                        translations.mirrors?.nav?.benefits ||
+                        (lang === "ru" ? "Преимущества зеркал" : "Mirror perks"),
                       desc:
                         translations.mirrors?.nav?.benefitsDesc ||
-                        "Почему стоит использовать",
+                        (lang === "ru"
+                          ? "Скорость, защита и безостановочный доступ"
+                          : "Speed, protection, uninterrupted access"),
                     },
                     {
                       id: "faq",
@@ -182,7 +190,9 @@ export default function MirrorsPage({
                       title: translations.mirrors?.nav?.faq || "FAQ",
                       desc:
                         translations.mirrors?.nav?.faqDesc ||
-                        "Ответы на вопросы",
+                        (lang === "ru"
+                          ? "Ответы по зеркалам, VPN и безопасности"
+                          : "Answers about mirrors, VPN and safety"),
                     },
                   ].map((item) => (
                     <li key={item.id}>
@@ -201,6 +211,35 @@ export default function MirrorsPage({
                   ))}
                 </ul>
               </nav>
+
+              <section className="bg-[#1c1c2d]/60 border border-white/5 rounded-3xl p-6 mb-10">
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  {lang === "ru"
+                    ? "Мы синхронизируем зеркала Vavada с частотой 3–5 минут, проверяем SSL, пинг и пропускную способность из РФ, стран СНГ и ЕС. Если домен попадает под блокировку, резерв сразу уходит в рассылку и в этот список."
+                    : "We sync Vavada mirrors every 3–5 minutes, check SSL, ping, and throughput from CIS, EU, and LATAM vantage points. When a domain is blocked, a backup goes to the newsletter and to this list instantly."}
+                </p>
+                <ul className="mt-4 grid gap-3 text-sm text-gray-200 md:grid-cols-2">
+                  {[
+                    lang === "ru"
+                      ? "Вход без VPN и сохранённые сессии"
+                      : "VPN-free login with preserved sessions",
+                    lang === "ru"
+                      ? "Работа на десктопе, iOS, Android и смарт‑TV"
+                      : "Works on desktop, iOS, Android, smart TV",
+                    lang === "ru"
+                      ? "Push-уведомления о смене домена и кэшбэке"
+                      : "Push alerts about domain changes and cashback",
+                    lang === "ru"
+                      ? "Поддержка 24/7 и резервные платежные шлюзы"
+                      : "24/7 support and backup payment gateways",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#ff424d]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
               <MirrorsList translations={translations} lang={lang} />
               <HowToUse translations={translations} lang={lang} />

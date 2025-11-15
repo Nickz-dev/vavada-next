@@ -5,6 +5,11 @@ import { nanoid } from "nanoid";
 import Layout from "@/components/Layout";
 import Header from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HeroBonuses } from "@/components/HeroBonuses";
+import { HeroSignUp } from "@/components/HeroSignUp";
+import { HeroMirrors } from "@/components/HeroMirrors";
+import { HeroPayments } from "@/components/HeroPayments";
+import { HeroDownload } from "@/components/HeroDownload";
 import { CurrentBonuses } from "@/components/CurrentBonuses";
 import { MainFeatures } from "@/components/MainFeatures";
 import { PopularGames } from "@/components/PopularGames";
@@ -82,9 +87,16 @@ export default function HomePage({
 
   // Получаем мета-данные для главной страницы
   const homeMeta = translations.meta?.home || {
-    title: "Vavada Casino",
-    description: "Official Vavada casino website",
-    keywords: "casino, vavada, slots, bonuses, roulette",
+    title:
+      lang === "ru"
+        ? "Vavada online casino — вход, регистрация и рабочее зеркало"
+        : "Vavada online casino — login, registration and live mirror",
+    description:
+      lang === "ru"
+        ? "Vavada casino: рабочие зеркала, мгновенные депозиты, приветственные бонусы, турниры и мобильное приложение без VPN."
+        : "Vavada casino: live mirrors, instant deposits, welcome bonuses, tournaments and mobile access without VPN.",
+    keywords:
+      "vavada, vavada casino, vavada вход, vavada регистрация, vavada зеркало, vavada bonuses, vavada online casino",
   };
 
   // Добавляем канонический URL
@@ -102,8 +114,8 @@ export default function HomePage({
               "@context": "https://schema.org",
               "@type": "Casino",
               name: "Vavada Casino",
-              url: "https://vavada-cis.com",
-              logo: "https://vavada-cis.com/logo.png",
+              url: "https://vavada-0001.com",
+              logo: "https://vavada-0001.com/logo.png",
               sameAs: [
                 "https://facebook.com/vavada",
                 "https://twitter.com/vavada",
@@ -122,8 +134,14 @@ export default function HomePage({
           currentLang={lang}
           currentPage={translations.header?.nav?.links?.home || "Главная"}
         />
-        <main>
+        <main className="space-y-16">
           <Hero templateData={templateData} lang={lang} />
+          <HeroBonuses templateData={templateData} lang={lang} />
+          <HeroSignUp templateData={templateData} lang={lang} />
+          <HeroMirrors templateData={templateData} lang={lang} />
+          <HeroPayments templateData={templateData} lang={lang} />
+          <HeroDownload templateData={templateData} lang={lang} />
+
           <CurrentBonuses
             templateData={templateData}
             lang={lang}

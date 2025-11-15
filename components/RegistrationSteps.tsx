@@ -7,82 +7,87 @@ interface RegistrationStepsProps {
   lang: string;
 }
 
+type StepItem = {
+  id: number;
+  title: string;
+  items: string[];
+  tip?: string;
+};
+
 const RegistrationSteps: React.FC<RegistrationStepsProps> = ({
   templateData,
   lang,
 }) => {
-  // Получаем переводы
-  const ruTranslations = ru as any;
-  const enTranslations = en as any;
+  const locale = lang === "ru" ? (ru as any) : (en as any);
+  const t = locale.registrationSteps || {};
 
-  const t =
-    lang === "ru"
-      ? ruTranslations.registrationSteps || {}
-      : enTranslations.registrationSteps || {};
-
-  // Значения по умолчанию
-  const defaultSteps = [
+  const defaultSteps: StepItem[] = [
     {
       id: 1,
-      title: lang === "ru" ? "Заполнение данных" : "Fill in details",
+      title: lang === "ru" ? "Заполните форму" : "Fill the form",
       items: [
-        lang === "ru" ? "Введите действующий email" : "Enter a valid email",
+        lang === "ru" ? "Введите email и номер телефона" : "Enter email and phone",
         lang === "ru"
-          ? "Придумайте надежный пароль"
-          : "Create a strong password",
+          ? "Создайте пароль и подтвердите его"
+          : "Create a password and confirm it",
         lang === "ru"
-          ? "Выберите удобную валюту"
-          : "Select your preferred currency",
+          ? "Выберите валюту и страну"
+          : "Choose currency and country",
       ],
+      tip:
+        lang === "ru"
+          ? "Используйте реальный email — на него придет письмо с подтверждением."
+          : "Use a real email — confirmation link arrives there.",
     },
     {
       id: 2,
-      title: lang === "ru" ? "Подтверждение email" : "Email verification",
+      title: lang === "ru" ? "Подтвердите аккаунт" : "Confirm account",
       items: [
-        lang === "ru" ? "Проверьте входящие письма" : "Check your inbox",
-        lang === "ru"
-          ? "Найдите письмо от Vavada Casino"
-          : "Find email from Vavada Casino",
+        lang === "ru" ? "Откройте письмо от Vavada" : "Open the email from Vavada",
         lang === "ru"
           ? "Перейдите по ссылке подтверждения"
-          : "Click the verification link",
+          : "Follow the verification link",
+        lang === "ru"
+          ? "Войдите через актуальное зеркало"
+          : "Log in via the live mirror",
       ],
+      tip:
+        lang === "ru"
+          ? "Если письма нет, проверьте папку «Спам» или запросите письмо повторно."
+          : "No email? Check spam or request another verification link.",
     },
     {
       id: 3,
-      title: lang === "ru" ? "Активация бонуса" : "Bonus activation",
+      title: lang === "ru" ? "Активируйте бонус" : "Activate bonus",
       items: [
+        lang === "ru" ? "Пополните счет от 100 ₽" : "Make a deposit from €5",
         lang === "ru"
-          ? "Пополните счет на любую сумму"
-          : "Make your first deposit",
+          ? "Получите 100% + фриспины автоматически"
+          : "Receive 100% + free spins automatically",
         lang === "ru"
-          ? "Получите 100% бонус до 100 000₽"
-          : "Get 100% bonus up to €1000",
-        lang === "ru"
-          ? "Используйте фриспины в выбранных слотах"
-          : "Use free spins in selected slots",
+          ? "Играйте в слоты из приветственного списка"
+          : "Play slots from the welcome list",
       ],
+      tip:
+        lang === "ru"
+          ? "Кэшбэк и промокоды подключаются в личном кабинете после входа."
+          : "Cashback and promo codes activate in your profile after login.",
     },
   ];
 
-  // Стили по умолчанию
-  const defaultStyles = {
-    section: "bg-[#2a2a42] p-8 md:p-10 mb-12",
-    title: "text-3xl p-6 font-bold text-white mb-8 text-center",
-    step: "bg-[#1c1c2d]  p-6 border border-[#383856] hover:border-[#ff424d]/50 transition-colors",
-    stepHeader: "flex items-center mb-4",
-    stepNumber:
-      "flex-shrink-0 w-12 h-12 rounded-full bg-[#ff424d]/10 flex items-center justify-center text-2xl font-bold text-[#ff424d]",
-    stepTitle: "ml-4 text-xl font-semibold text-white",
-    stepContent: "text-gray-400",
-    item: "flex items-start",
-    icon: "flex-shrink-0 w-5 h-5 text-[#ff424d] mt-0.5",
-    itemText: "ml-2",
-  };
+  const steps: StepItem[] =
+    templateData?.registrationSteps?.steps || t.steps || defaultSteps;
 
-  // Стили из шаблона или по умолчанию
-  const styles = templateData?.registrationSteps?.styles || defaultStyles;
-  const steps = templateData?.registrationSteps?.steps || defaultSteps;
+  const styles = templateData?.registrationSteps?.styles || {
+    section: "bg-[#15152a] rounded-3xl border border-white/5 p-6 md:p-10",
+    title: "text-2xl md:text-3xl font-bold text-white",
+    subtitle: "text-sm text-white/70 max-w-2xl",
+    step: "bg-[#1c1c2d] rounded-2xl border border-white/5 p-6 hover:border-[#ff424d]/50 transition",
+    number:
+      "w-12 h-12 flex items-center justify-center rounded-full bg-[#ff424d]/10 text-[#ff424d] text-lg font-semibold",
+    item: "flex items-start gap-3 text-sm text-white/70",
+    tip: "text-xs text-white/50 border-t border-white/10 pt-3 mt-3",
+  };
 
   return (
     <section
@@ -91,53 +96,49 @@ const RegistrationSteps: React.FC<RegistrationStepsProps> = ({
       itemScope
       itemType="https://schema.org/HowTo"
     >
-      <h2 className={styles.title} itemProp="name">
-        {t.title ||
-          (lang === "ru"
-            ? "3 простых шага для регистрации в Vavada"
-            : "3 simple steps to register at Vavada")}
-      </h2>
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {steps.map((step: any) => (
-            <div
-              key={step.id}
-              className={styles.step}
-              itemProp="step"
-              itemScope
-              itemType="https://schema.org/HowToStep"
-            >
-              <div className={styles.stepHeader}>
-                <div className={styles.stepNumber}>{step.id}</div>
-                <h3 className={styles.stepTitle} itemProp="name">
-                  {step.title}
-                </h3>
-              </div>
-              <div className={styles.stepContent} itemProp="text">
-                <ul className="space-y-3">
-                  {step.items.map((item: string, index: number) => (
-                    <li key={index} className={styles.item}>
-                      <svg
-                        className={styles.icon}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span className={styles.itemText}>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+      <div className="space-y-2 mb-8">
+        <p className="text-xs uppercase tracking-[0.4em] text-white/40">
+          {lang === "ru" ? "инструкция" : "guide"}
+        </p>
+        <h2 className={styles.title} itemProp="name">
+          {t.title ||
+            (lang === "ru"
+              ? "Регистрация Vavada в 3 шага"
+              : "Register at Vavada in 3 steps")}
+        </h2>
+        <p className={styles.subtitle}>
+          {t.subtitle ||
+            (lang === "ru"
+              ? "Заполните форму, подтвердите email и активируйте бонус. Зеркало подключит вас к рабочему домену автоматически."
+              : "Fill out the form, confirm your email, and activate the bonus. The mirror connects you to the live domain automatically.")}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6" itemProp="step">
+        {steps.map((step) => (
+          <article
+            key={step.id}
+            className={styles.step}
+            itemScope
+            itemType="https://schema.org/HowToStep"
+          >
+            <header className="flex items-center gap-4 mb-4">
+              <span className={styles.number}>{step.id}</span>
+              <h3 className="text-lg font-semibold text-white" itemProp="name">
+                {step.title}
+              </h3>
+            </header>
+            <div className="space-y-3" itemProp="text">
+              {step.items.map((item, idx) => (
+                <p key={`${step.id}-${idx}`} className={styles.item}>
+                  <span className="text-[#4CAF50]">✓</span>
+                  <span>{item}</span>
+                </p>
+              ))}
             </div>
-          ))}
-        </div>
+            {step.tip && <p className={styles.tip}>{step.tip}</p>}
+          </article>
+        ))}
       </div>
     </section>
   );

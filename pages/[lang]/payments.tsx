@@ -79,25 +79,27 @@ export default function PaymentsPage({
   const defaultMeta = {
     title:
       lang === "ru"
-        ? "Платежные методы в VAVADA | Пополнение и вывод средств"
-        : "Payment Methods at VAVADA | Deposits & Withdrawals",
+        ? "Платежные методы VAVADA — мгновенные депозиты и вывод без комиссии"
+        : "VAVADA payment methods — instant deposits and fee-free payouts",
 
     description:
       lang === "ru"
-        ? "Безопасные и быстрые способы пополнения счета и вывода выигрышей в казино VAVADA. Все платежные методы с лимитами и комиссиями."
-        : "Secure and fast deposit and withdrawal methods at VAVADA casino. All payment options with limits and fees.",
+        ? "Рассказываем, как пополнить Vavada с карт, крипты и P2P, какие лимиты действуют в 2025 и как получить выплату без блокировок."
+        : "How to fund Vavada with cards, crypto, and P2P, 2025 limits overview, and how to withdraw without delays.",
 
     keywords:
       translations.meta?.home?.keywords ||
       (lang === "ru"
-        ? "платежи vavada, пополнение счета, вывод средств, методы оплаты"
-        : "vavada payments, deposit, withdrawal, payment methods"),
+        ? "vavada платежи, пополнение vavada, вывод vavada, casino payments"
+        : "vavada payments, vavada deposit, vavada withdrawal, casino payments"),
 
     canonical: `/${lang}/payments`,
 
     og: {
       title:
-        lang === "ru" ? "Платежные системы VAVADA" : "VAVADA Payment Systems",
+        lang === "ru"
+          ? "Платежные системы VAVADA"
+          : "VAVADA payment systems",
       description:
         lang === "ru"
           ? "Все способы пополнения и вывода в казино VAVADA"
@@ -110,7 +112,9 @@ export default function PaymentsPage({
     twitter: {
       card: "summary_large_image",
       title:
-        lang === "ru" ? "Платежные системы VAVADA" : "VAVADA Payment Systems",
+        lang === "ru"
+          ? "Платежные системы VAVADA"
+          : "VAVADA Payment Systems",
       description:
         lang === "ru"
           ? "Все способы пополнения и вывода в казино VAVADA"
@@ -171,28 +175,39 @@ export default function PaymentsPage({
 
         <main className="container mx-auto px-4 py-8">
           <article className="prose prose-invert max-w-none">
-            <nav className="bg-[#2a2a42] rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 overflow-x-auto">
+            <nav className="bg-[#2a2a42] rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 overflow-x-auto border border-white/10">
               <ul className="flex flex-nowrap sm:flex-wrap gap-4 min-w-max sm:min-w-0">
                 {[
                   {
                     id: "deposit",
                     text:
-                      translations.payments?.nav?.deposit || "Методы депозита",
+                      translations.payments?.nav?.deposit ||
+                      (lang === "ru" ? "Методы депозита" : "Deposit methods"),
                   },
                   {
                     id: "withdrawal",
                     text:
-                      translations.payments?.nav?.withdrawal || "Методы вывода",
+                      translations.payments?.nav?.withdrawal ||
+                      (lang === "ru" ? "Методы вывода" : "Withdrawal methods"),
                   },
                   {
                     id: "limits",
-                    text: translations.payments?.nav?.limits || "Лимиты",
+                    text:
+                      translations.payments?.nav?.limits ||
+                      (lang === "ru" ? "Лимиты 2025" : "2025 limits"),
                   },
                   {
                     id: "howto",
-                    text: translations.payments?.nav?.howto || "Инструкции",
+                    text:
+                      translations.payments?.nav?.howto ||
+                      (lang === "ru" ? "Инструкции" : "How-to"),
                   },
-                  { id: "faq", text: translations.payments?.nav?.faq || "FAQ" },
+                  {
+                    id: "faq",
+                    text:
+                      translations.payments?.nav?.faq ||
+                      (lang === "ru" ? "FAQ по платежам" : "Payments FAQ"),
+                  },
                 ].map((item) => (
                   <li key={item.id}>
                     <a
@@ -205,6 +220,35 @@ export default function PaymentsPage({
                 ))}
               </ul>
             </nav>
+
+            <section className="bg-[#1c1c2d]/60 border border-white/5 rounded-3xl p-6 mb-10">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                {lang === "ru"
+                  ? "Служба Vavada использует независимо сертифицированные шлюзы и несколько банковских процессингов, поэтому депозиты проходят даже при локальных блокировках. Если текущий метод недоступен — переключите зеркало в кассе или используйте криптокошелёк."
+                  : "Vavada relies on independently certified gateways and several banking processors, so deposits succeed even during local restrictions. If a method is unavailable, switch the mirror inside cashier or use a crypto wallet."}
+              </p>
+              <div className="mt-4 grid gap-4 md:grid-cols-2 text-sm text-gray-200">
+                {[
+                  lang === "ru"
+                    ? "Поддерживаем валюты RUB, KZT, UAH, EUR, USD и USDT с авто-конвертацией."
+                    : "Supports RUB, KZT, UAH, EUR, USD and USDT with auto conversion.",
+                  lang === "ru"
+                    ? "Транзакции защищены 3DS2 и токенизацией; данные карт не хранятся на серверах Vavada."
+                    : "Transactions secured by 3DS2 and tokenization; card data never lives on Vavada servers.",
+                  lang === "ru"
+                    ? "Средний вывод до 15 000 ₽ / 300€ занимает 15 минут, VIP-клиенты получают приоритет."
+                    : "Average payout up to €300 hits within 15 minutes; VIP players get priority lanes.",
+                  lang === "ru"
+                    ? "Каждый вторник действует кэшбек до 10% на депозиты от 5 000 ₽."
+                    : "Every Tuesday cashback up to 10% applies to deposits from €50.",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#ff424d]" />
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
 
             <HeroPayments templateData={templateData} lang={lang} />
             <PaymentMethods translations={translations} lang={lang} />

@@ -1,53 +1,104 @@
-export const LoyaltyProgram = ({ translations, lang }: any) => (
-  <section id="loyalty" className="bg-[#2a2a42] rounded-xl p-6 md:p-8 mb-8">
-    <h2 className="text-2xl font-bold text-white mb-6">
-      {translations.bonuses?.loyaltyTitle || 
-        (lang === 'ru' ? 'Программа лояльности' : 'Loyalty Program')}
-    </h2>
-    
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {(translations.bonuses?.loyaltyTiers || [
+type Tier = {
+  title: string;
+  perks: string[];
+  badge?: string;
+};
+
+const fallbackTiers = (lang: string): Tier[] =>
+  lang === "ru"
+    ? [
         {
           title: "Silver",
-          items: [
-            lang === 'ru' ? "Кэшбэк 5%" : "5% cashback",
-            lang === 'ru' ? "Персональные акции" : "Personal promotions",
-            lang === 'ru' ? "Бонусы на депозит" : "Deposit bonuses"
-          ]
+          badge: "5% кэшбэк",
+          perks: ["Кэшбэк 5%", "Персональные акции", "Бонусы на депозит"],
         },
         {
           title: "Gold",
-          items: [
-            lang === 'ru' ? "Кэшбэк 7%" : "7% cashback",
-            lang === 'ru' ? "Повышенные лимиты" : "Increased limits",
-            lang === 'ru' ? "Эксклюзивные бонусы" : "Exclusive bonuses"
-          ]
+          badge: "7% кэшбэк",
+          perks: ["Кэшбэк 7%", "Повышенные лимиты", "Эксклюзивные бонусы"],
         },
         {
           title: "Diamond",
-          items: [
-            lang === 'ru' ? "Кэшбэк 10%" : "10% cashback",
-            lang === 'ru' ? "VIP поддержка" : "VIP support",
-            lang === 'ru' ? "Особые привилегии" : "Special privileges"
-          ]
-        }
-      ]).map((tier: any, idx: number) => (
-        <div 
-          key={idx} 
-          className={`bg-[#1c1c2d] rounded-xl p-6 ${
-            tier.title === "Gold" ? "border-2 border-[#ff424d]" : ""
-          }`}
-        >
-          <h3 className="text-xl font-semibold text-white mb-4">
-            {tier.title}
-          </h3>
-          <ul className="space-y-3 text-gray-300">
-            {tier.items.map((item: string, itemIdx: number) => (
-              <li key={itemIdx}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+          badge: "10% кэшбэк",
+          perks: ["Кэшбэк 10%", "VIP поддержка", "Особые привилегии"],
+        },
+      ]
+    : [
+        {
+          title: "Silver",
+          badge: "5% cashback",
+          perks: ["5% cashback", "Personal promos", "Deposit boosts"],
+        },
+        {
+          title: "Gold",
+          badge: "7% cashback",
+          perks: ["7% cashback", "Higher limits", "Exclusive bonuses"],
+        },
+        {
+          title: "Diamond",
+          badge: "10% cashback",
+          perks: ["10% cashback", "VIP support", "Special privileges"],
+        },
+      ];
+
+export const LoyaltyProgram = ({ translations, lang }: any) => {
+  const tiers: Tier[] =
+    translations.bonuses?.loyaltyTiers || fallbackTiers(lang);
+
+  return (
+    <section
+      id="loyalty"
+      className="bg-[#15152a] rounded-3xl p-6 md:p-10 mb-8 border border-white/5 space-y-6"
+    >
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.4em] text-white/50">
+          {lang === "ru" ? "лояльность" : "loyalty"}
+        </p>
+        <h2 className="text-2xl md:text-3xl font-bold text-white">
+          {translations.bonuses?.loyaltyTitle ||
+            (lang === "ru" ? "Программа лояльности" : "Loyalty Program")}
+        </h2>
+        <p className="text-sm text-white/70">
+          {translations.bonuses?.loyaltyDescription ||
+            (lang === "ru"
+              ? "Повышайте уровень, получайте больший кэшбэк, персональные бонусы и круглосуточную VIP-поддержку."
+              : "Level up to unlock higher cashback, personal bonuses, and 24/7 VIP support.")}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {tiers.map((tier, idx) => {
+          const perks = tier.perks || (tier as any).items || [];
+          return (
+          <div
+            key={`${tier.title}-${idx}`}
+            className={`bg-[#1d1d32] rounded-2xl p-6 border border-white/5 ${
+              tier.title === "Gold" || tier.title === "Diamond"
+                ? "shadow-lg shadow-[#ff424d]/20 border-[#ff424d]/40"
+                : ""
+            }`}
+          >
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-semibold text-white">{tier.title}</h3>
+              {tier.badge && (
+                <span className="text-xs uppercase tracking-[0.3em] text-[#ff727f]">
+                  {tier.badge}
+                </span>
+              )}
+            </div>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              {perks.map((perk, perkIdx) => (
+                <li key={`${perk}-${perkIdx}`} className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#ff424d]" />
+                  <span>{perk}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+        })}
+      </div>
+    </section>
+  );
+};
+

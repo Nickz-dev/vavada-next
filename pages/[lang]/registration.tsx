@@ -79,22 +79,20 @@ export default function RegistrationPage({
   const registrationMeta = translations.meta?.registration || {
     title:
       lang === "ru"
-        ? "Регистрация в Vavada Casino | Создать аккаунт"
-        : "Register at Vavada Casino | Create Account",
+        ? "Регистрация в VAVADA — вход, верификация и приветственный бонус"
+        : "VAVADA registration — login, verification and welcome bonus",
 
     description:
       lang === "ru"
-        ? "Зарегистрируйтесь в Vavada Casino и получите бонус 100% до 100 000₽ + 100 фриспинов. Быстрая регистрация за 1 минуту."
-        : "Sign up at Vavada Casino and get 100% bonus up to €1000 + 100 free spins. Quick registration in 1 minute.",
+        ? "Пошагово показываем, как создать аккаунт Vavada, подтвердить e‑mail и получить 100% бонус + фриспины на актуальном зеркале."
+        : "Step-by-step guide to create a Vavada account, verify your email, and grab a 100% bonus + free spins via the live mirror.",
 
-    // Используем общие ключевые слова из основного meta
     keywords:
       translations.meta?.home?.keywords ||
       (lang === "ru"
-        ? "казино, vavada, регистрация, создать аккаунт, бонус за регистрацию"
-        : "casino, vavada, register, create account, sign up bonus"),
+        ? "регистрация vavada, вход vavada, аккаунт vavada, бонус за регистрацию"
+        : "vavada registration, vavada login, vavada account, signup bonus"),
 
-    // Добавляем канонический URL
     canonical: `/${lang}/registration`,
   };
 
@@ -157,6 +155,38 @@ export default function RegistrationPage({
         />
         <main>
           <HeroSignUp templateData={templateData} lang={lang} />
+
+          <section className="container mx-auto px-4 py-8">
+            <div className="bg-[#1c1c2d]/60 border border-white/5 rounded-3xl p-6 space-y-4">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                {lang === "ru"
+                  ? "Регистрация на рабочем зеркале Vavada занимает одну минуту: указываете e‑mail, пароль и валюту, после чего система автоматически закрепляет ваш аккаунт за выбранным регионом. Данные передаются по HTTPS и дублируются на резервном домене."
+                  : "Signing up on the live Vavada mirror takes one minute: enter email, password, and currency, then the system anchors your account to the selected region. Data travels over HTTPS and is mirrored to a backup domain."}
+              </p>
+              <ul className="grid gap-3 md:grid-cols-2 text-sm text-gray-200">
+                {[
+                  lang === "ru"
+                    ? "Можно входить через соцсети — в любой момент переключитесь на e‑mail."
+                    : "Social login is available — switch back to email anytime.",
+                  lang === "ru"
+                    ? "KYC требуется только для выводов от 5 000 ₽ и занимает до 30 минут."
+                    : "KYC is required only for payouts above €50 and takes up to 30 minutes.",
+                  lang === "ru"
+                    ? "Бонус 100% + фриспины активируется автоматически после депозита."
+                    : "100% bonus + free spins activate automatically after deposit.",
+                  lang === "ru"
+                    ? "Если зеркало сменилось, авторизация сохраняется — сессия синхронизируется."
+                    : "When a mirror changes your session persists thanks to sync tokens.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#ff424d]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
           <RegistrationNavigation templateData={templateData} lang={lang} />
           <RegistrationSteps templateData={templateData} lang={lang} />
           <RegistrationForm templateData={templateData} lang={lang} />

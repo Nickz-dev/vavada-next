@@ -14,14 +14,16 @@ const Page404 = () => {
   
   const translations: Record<string, Translation> = {
     ru: {
-      title: "Страница не найдена",
-      message: "К сожалению, запрашиваемая страница не существует или была перемещена.",
-      home: "Вернуться на главную"
+      title: "404 — зеркало Vavada не найдено",
+      message:
+        "Кажется, ссылка устарела или зеркало Vavada было обновлено. Проверьте актуальные домены, чтобы продолжить регистрацию, вход и игру в Vavada online casino.",
+      home: "На актуальную главную"
     },
     en: {
-      title: "Page not found",
-      message: "Sorry, the page you are looking for doesn't exist or has been moved.",
-      home: "Back to home"
+      title: "404 — Vavada mirror not found",
+      message:
+        "This link is outdated or the Vavada mirror has already switched to a new domain. Return to the homepage to log in, register and keep playing at Vavada online casino.",
+      home: "Go to live homepage"
     }
   };
 

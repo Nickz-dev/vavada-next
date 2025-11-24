@@ -10,7 +10,7 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const id = ctx.params?.id;
 
   // Формируем целевой URL (замените на ваш домен)
-  const targetUrl = `https://vavada.c-wn.ru?lang=${lang}&ref=${id || ''}`;
+  const targetUrl = `https://vavada.slot24.bet?lang=${lang}&ref=${id || ''}`;
   
   // Для теста можно использовать:
   // const targetUrl = `/debug?lang=${lang}&ref=${id}`;
